@@ -1,11 +1,14 @@
+require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `BMT AGENCY`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-env-variables`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,11 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: `no5egcuj`,
-        dataset: `production`,
-        graphqlTag: "default",
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        token: process.env.SANITY_TOKEN,
+        graphqlTag: `default`,
       },
     },
+    `gatsby-plugin-postcss`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

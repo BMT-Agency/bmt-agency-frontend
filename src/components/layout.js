@@ -10,24 +10,24 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SanityBlogQuery {
-      sanityProjects {
-        _id
-        _rawContent
-        _rawClientLogo
-        client
-        title
+    query allAuthor {
+      allSanityAuthor(sort: { fields: name }) {
+        edges {
+          node {
+            id
+            name
+          }
+        }
       }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.sanityProjects.title} />
+      <Header siteTitle="hey" />
       <div
         style={{
           margin: `0 auto`,
