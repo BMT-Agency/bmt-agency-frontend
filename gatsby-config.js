@@ -1,4 +1,7 @@
-require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` })
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `BMT AGENCY`,
@@ -7,7 +10,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-env-variables`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,9 +35,9 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: process.env.SANITY_PROJECT_ID,
-        dataset: process.env.SANITY_DATASET,
-        token: process.env.SANITY_TOKEN,
+        projectId: process.env.GATSBY_PROJECT_ID,
+        dataset: process.env.GATSBY_SANITY_DATASET,
+        token: process.env.GATSBY_SANITY_TOKEN,
         graphqlTag: `default`,
       },
     },
