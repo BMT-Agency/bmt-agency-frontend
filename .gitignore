@@ -1,3 +1,4 @@
+  
 # Logs
 logs
 *.log
@@ -52,7 +53,7 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-# .env*
+.env*
 
 
 # gatsby files
@@ -68,8 +69,3 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-
-# environment variable
-.env
-.environment
-.env.development
