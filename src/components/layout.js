@@ -13,13 +13,10 @@ import Header from "./header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query allAuthor {
-      allSanityAuthor(sort: { fields: name }) {
-        edges {
-          node {
-            id
-            name
-          }
+    query postAuthor {
+      sanityPost {
+        author {
+          name
         }
       }
     }
@@ -27,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle="hey" />
+      <Header siteTitle={data.sanityPost.author.name} />
       <div
         style={{
           margin: `0 auto`,
