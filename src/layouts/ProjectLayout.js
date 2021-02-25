@@ -1,120 +1,144 @@
 import React from "react"
-import Header from "../components/header"
-import Footer from "../components/Footer"
+import Nav from "../components/Nav"
+import { FooterOne, Footer } from "../components/Footer"
 
-import img from "../images/astronaut.png"
+import headerbg from "../images/projects/Frame.png"
+import logo from "../images/projects/logo.svg"
+import imgOne from "../images/projects/1.png"
+import two from "../images/projects/2.png"
+import five from "../images/projects/5.png"
+import four from "../images/projects/4.png"
+
 import PropTypes from "prop-types"
 
 export default function ProjectLayout() {
   return (
     <>
-      <header
-        className="w-full h-96 bg-top bg-no-repeat bg-auto"
-        style={{
-          background: `url('https://images.unsplash.com/photo-1609342475528-dd7d93e8311e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80')`,
-        }}
-      ></header>
+      <Nav />
+      <div className="w-full">
+        <img src={headerbg} className="w-full" />
+      </div>
 
-      <div className="container grid grid-cols-2 grid gap-x-8 mt-10">
-        <div className="col-start-1 col-end-3 m-8">
-          <h1 className="text-8xl">tropical pops</h1>
+      <div className="grid grid-cols-2 mt-16 ml-16">
+        <div className="flex justify-evenly">
+          <div>
+            <p className="text-gray-400 font-light mt-4">
+              client <br />
+              <span className="text-gray-400 text-2xl font-semibold">
+                tropical pops
+              </span>{" "}
+            </p>
+            <p className="text-gray-400 font-light mt-4">
+              year <br />
+              <span className="text-gray-400 text-2xl font-semibold">
+                2019
+              </span>{" "}
+            </p>
+            <p className="text-gray-400 font-light mt-4">
+              category <br />
+              <span className="text-gray-400 text-2xl font-semibold">
+                Branding <br /> Packaging
+              </span>{" "}
+            </p>
+
+            <div className="mt-24">
+              <p className="text-gray-400">
+                To associate the characteristics of BMT as an agency,the
+                rhetorical image of horses.To associate the characteristics of
+                BMT as an agency,the rhetorical image of horses.To associate the
+                characteristics of BMT as an agency,the rhetorical image of
+                horses.To associate the characteristics of BMT as an agency,the
+                rhetorical image of horses.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <img src={logo} className="w-72" />
+          </div>
         </div>
 
-        <div className="col-end-7 grid-gap-x-8  m-8">
-          <span>year</span>
-          <p>2021</p>
-          <br />
-          <span>categories</span>
-          <p>UX/UI</p>
-          <p>Branding</p>
-          <p>Backend</p>
-          <p>Frontend</p>
-          <br />
-          <span>country</span>
-          <p>US</p>
+        <div>
+          <img src={imgOne} />
         </div>
       </div>
 
-      <div className="container grid grid-cols-2 mt-10">
-        <div className="col-start-1 col-end-2 mt-40 m-8">
-          <p className="text">
-            To associate the characteristics of BMT as an agency, the <br />
-            rhetorical image of horses. To associate the <br />
-            characteristics of BMT as an agency, the . rhetorical
-            <br /> image of horses. To associate the characteristics of BMT
-            <br />
-            as an agency, the . rhetorical image of horses.
-            <br /> To associate the characteristics of BMT as an agency, the
-            <br />
+      <div className="grid grid-cols-2">
+        <div>
+          <img src={two} />
+        </div>
+
+        <div className="mt-96 ml-24">
+          <p className="text-gray-400">
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
             rhetorical image of horses.
-          </p>
-        </div>
-
-        <div className="col-end-7 col-span-2 ">
-          <img src={img} className="w-3/4 h-auto" />
-        </div>
-      </div>
-
-      <div className="container grid grid-cols-2 mt-10">
-        <div className="col-start-0 col-end-2">
-          <img src={img} className="w-3/4 h-auto" />
-        </div>
-
-        <div className="col-end-7 col-span-2 ">
-          <p className="text">
-            To associate the characteristics of BMT as an agency, the <br />
-            rhetorical image of horses. To associate the <br />
-            characteristics of BMT as an agency, the . rhetorical
-            <br /> image of horses. To associate the characteristics of BMT
             <br />
-            as an agency, the . rhetorical image of horses.
-            <br /> To associate the characteristics of BMT as an agency, the
             <br />
-            rhetorical image of horses.
-          </p>
-        </div>
-      </div>
-
-      <div className="container grid grid-cols-2 mt-10">
-        <div className="col-start-1 col-end-2 mt-40 m-8">
-          <p className="text">
-            To associate the characteristics of BMT as an agency, the <br />
-            rhetorical image of horses. To associate the <br />
-            characteristics of BMT as an agency, the . rhetorical
-            <br /> image of horses. To associate the characteristics of BMT
-            <br />
-            as an agency, the . rhetorical image of horses.
-            <br /> To associate the characteristics of BMT as an agency, the
-            <br />
-            rhetorical image of horses.
-          </p>
-        </div>
-
-        <div className="col-end-7 col-span-2 ">
-          <img src={img} className="w-3/4 h-auto" />
-        </div>
-      </div>
-
-      <div className="container grid grid-cols-2 mt-10">
-        <div className="col-start-0 col-end-2">
-          <img src={img} className="w-3/4 h-auto" />
-        </div>
-
-        <div className="col-end-7 col-span-2 ">
-          <p className="text">
-            To associate the characteristics of BMT as an agency, the <br />
-            rhetorical image of horses. To associate the <br />
-            characteristics of BMT as an agency, the . rhetorical
-            <br /> image of horses. To associate the characteristics of BMT
-            <br />
-            as an agency, the . rhetorical image of horses.
-            <br /> To associate the characteristics of BMT as an agency, the
-            <br />
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
             rhetorical image of horses.
           </p>
         </div>
       </div>
 
+      <div className="grid grid-cols-2">
+        <div className="mt-96 ml-24">
+          <p className="text-gray-400">
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
+            rhetorical image of horses.
+            <br />
+            <br />
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
+            rhetorical image of horses.
+          </p>
+        </div>
+
+        <div>
+          <img src={five} className="w-9/12" />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2">
+        <div>
+          <img src={four} />
+        </div>
+
+        <div className="mt-96 ml-24">
+          <p className="text-gray-400">
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
+            rhetorical image of horses.
+            <br />
+            <br />
+            To associate the characteristics of BMT as an agency,the rhetorical
+            image of horses.To associate the characteristics of BMT as an
+            agency,the rhetorical image of horses.To associate the
+            characteristics of BMT as an agency,the rhetorical image of
+            horses.To associate the characteristics of BMT as an agency,the
+            rhetorical image of horses.
+          </p>
+        </div>
+      </div>
+
+      <FooterOne />
       <Footer />
     </>
   )

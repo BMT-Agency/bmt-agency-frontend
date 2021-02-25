@@ -1,8 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/bmt-logo-purple.svg"
+import bg from "../images/Brain.png"
 
-const Header = ({ siteTitle }) => {
+import Nav from "./Nav"
+
+const Header = ({ background }) => {
+  console.log(background)
   return (
     // //component
     // <header
@@ -27,90 +32,66 @@ const Header = ({ siteTitle }) => {
     //     </div>
     //   </div>
     // </header>
-
-    <div className="bg-hero-pattern bg-no-repeat bg-cover container">
-      <div className=" px-4 py-4">
-        <div className="md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between">
-          <div className="flex justify-between items-center">
-            <a href="#" className="inline-block py-2 text-xl font-bold">
-              LogoBmt
-            </a>
-            <div className="inline-block cursor-pointer md:hidden">
-              <div className=" w-8 mb-2 h-0.25 -ml-32 flex">
+    <>
+      <Nav />
+      <div className="bg-hero-pattern">
+        <div className=" bg-no-repeat bg-cover container bg-hero-pattern ">
+          <div className=" px-4 py-4">
+            <div className="md:mx-auto md:flex md:items-center md:justify-between  bg-hero-pattern">
+              <div className="flex justify-between items-center bg-hero-pattern">
+                <div className="inline-block cursor-pointer md:hidden"></div>
+              </div>
+              {/* 
+              <div className="hidden md:block">
                 <a
                   href="#"
-                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
+                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-pink-700 mr-6"
                 >
                   FB
                 </a>
                 <a
                   href="#"
-                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
+                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-pink-700 mr-6"
                 >
                   IG
                 </a>
                 <a
                   href="#"
-                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
+                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-pink-700 mr-6"
                 >
                   YT
                 </a>
-                <a
-                  href="#"
-                  className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-                >
-                  EN
-                </a>
+              </div> */}
+            </div>
+          </div>
+
+          <div className=" md:overflow-hidden bg-hero-pattern">
+            <div className="px-4 py-20 md:py-4">
+              <div className="md:max-w-6xl md:mx-auto">
+                <div className="md:flex md:flex-wrap">
+                  <div className="md:w-1/2 text-center md:text-left md:pt-16">
+                    <h1 className="font-bold text-pink-700 text-2xl md:text-8xl leading-tight mb-4">
+                      data <br />
+                      driven
+                    </h1>
+
+                    <p className="text-gray-400 md:text-xl md:pr-48">
+                      digital marketing experience
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <a
-              href="#"
-              className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-            >
-              FB
-            </a>
-            <a
-              href="#"
-              className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-            >
-              IG
-            </a>
-            <a
-              href="#"
-              className="inline-block py-1 md:py-4 text-gray-500 hover:text-gray-100 mr-6"
-            >
-              YT
-            </a>
+          <div className=" flex justify-end">
+            <p className="p-4 text-pink-800 pt-10 text-end ml-38">
+              Let's work together
+            </p>
           </div>
         </div>
       </div>
-
-      <div className=" md:overflow-hidden">
-        <div className="px-4 py-20 md:py-4">
-          <div className="md:max-w-6xl md:mx-auto">
-            <div className="md:flex md:flex-wrap">
-              <div className="md:w-1/2 text-center md:text-left md:pt-16">
-                <h1 className="font-bold text-pink-700 text-2xl md:text-8xl leading-tight mb-4">
-                  data <br />
-                  driven
-                </h1>
-
-                <p className="text-gray-400 md:text-xl md:pr-48">
-                  digital marketing experience
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p className="text-end md:text-end p-4 text-gray-600 pt-10 text-end ml-38">
-        Let's work together
-      </p>
-    </div>
+    </>
   )
 }
 

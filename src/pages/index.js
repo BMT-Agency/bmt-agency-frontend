@@ -8,7 +8,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Banner from "../components/Banner"
 import OurClients from "../components/OurClients"
-import Footer from "../components/Footer"
+import { FooterOne, Footer } from "../components/Footer"
 
 const IndexPage = () => (
   <>
@@ -44,6 +44,7 @@ const IndexPage = () => (
     <Work />
     <Banner />
     <OurClients />
+    <FooterOne />
     <Footer />
   </>
 )

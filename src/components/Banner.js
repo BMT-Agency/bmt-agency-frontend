@@ -1,22 +1,15 @@
 import React from "react"
-import banner from "../images/banner.png"
+import banner from "../images/banner.jpg"
 
-export default function MiddleSection() {
+export default function Banner() {
   return (
-    <div>
-      <header className="pb-8 contents px-8 py-2 body mt-20 mx-8  ">
-        <div className="">
-          <div className="absolute">
-            <h1 className="text-4xl text-gray-400 ">
-              we do amazing things
-              <br /> with amazing bussines.
-            </h1>
-          </div>
-          <div className="relative">
-            <img src={banner} />
-          </div>
-        </div>
-      </header>
+    <div className="container flex">
+      <p className="text-gray-400 text-5xl p-24">
+        We do <span className="font-bold">amazing things</span> with
+        <span className="font-bold">amazing businesses.</span>
+      </p>
+
+      <img src={banner} className="w-1/2" />
     </div>
   )
 }
