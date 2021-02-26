@@ -5,23 +5,23 @@ import digital from "../images/expertise/Digital Marketing.jpg"
 import btl from "../images/expertise/BTL.jpg"
 import graphic from "../images/expertise/Graphic Design and Corporate Identity.jpg"
 import multimedia from "../images/expertise/Multimedia.jpg"
-import neuro from "../images/expertise/Neuromarketing.jpg"
+import web from "../images/expertise/Web and app development.jpg"
 
 export default function Expertise() {
   return (
     <>
-      <div className="">
-        <div className="grid grid-cols-2 gap-4 p-5 mb-24">
+      <div className="container grid grid-rows-1 h-screen ">
+        <div className="grid grid-cols-2 gap-4 p-5 mb-24 row-span-full">
           <div className="col-span-1 flex flex-col justify-between">
-            <h1 className=" font-bold text-pink-700 text-2xl md:text-8xl leading-tight m-24">
+            <h1 className="  text-primary text-2xl md:text-8xl leading-tight m-24">
               expertise
             </h1>
           </div>
 
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <span className="text-pink-700">
-                Marketing <span className="text-gray-500">Consulting</span>{" "}
+              <span className="text-primary">
+                Marketing <span className="text-secondary">Consulting</span>{" "}
               </span>
               <img
                 src={marketing}
@@ -31,8 +31,8 @@ export default function Expertise() {
             </div>
 
             <div>
-              <span className="text-pink-700">
-                Digital <span className="text-gray-500">Marketing</span>{" "}
+              <span className="text-primary">
+                Digital <span className="text-secondary">Marketing</span>{" "}
               </span>
               <img
                 src={digital}
@@ -42,13 +42,13 @@ export default function Expertise() {
             </div>
 
             <div>
-              <span className="text-pink-700">BTL </span>
+              <span className="text-primary">BTL </span>
               <img src={btl} alt="btl" className="w-full block rounded mt-9" />
             </div>
 
             <div>
-              <span className="text-pink-700">
-                Graphic <span className="text-gray-500">Design</span>{" "}
+              <span className="text-primary">
+                Graphic <span className="text-secondary">Design</span>{" "}
               </span>
               <img
                 src={graphic}
@@ -58,7 +58,7 @@ export default function Expertise() {
             </div>
 
             <div>
-              <span className="text-pink-700">Multimedia</span>
+              <span className="text-primary">Multimedia</span>
               <img
                 src={multimedia}
                 alt="multimedia"
@@ -67,9 +67,11 @@ export default function Expertise() {
             </div>
 
             <div>
-              <span className="text-pink-700">Neuromarketing</span>
+              <span className="text-primary">
+                Web & <span className="text-secondary">Development</span>{" "}
+              </span>
               <img
-                src={neuro}
+                src={web}
                 alt="neuromarketing"
                 className="w-full block rounded mt-9"
               />

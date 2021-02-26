@@ -2,15 +2,22 @@ module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: theme => ({
-        "hero-pattern": "url('/src/images/Brain.png')",
-        "banner-img": "url('/src/images/banner.png')",
-        "project-bg": "url('/src/images/projects/Frame.png')",
-        backgroundColor: ["active"],
-      }),
+    textColor: theme => theme("colors"),
+    textColor: {
+      primary: "#7E1B55",
+      secondary: "#878787",
+      white: "#FFFF",
+    },
+
+    fontFamily: {
+      sans: ["itc-avant-garde-gothic-pro, sans-serif"],
     },
   },
+
+  // backgroundImage: theme =>
+  //   theme({
+  //     horse: "url('/src/images/video/Caballo 2.mp4')",
+  //   }),
   variants: {
     extend: {},
   },

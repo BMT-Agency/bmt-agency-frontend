@@ -25,8 +25,8 @@ export default function OurClients() {
   return (
     <>
       <div>
-        <p className="font-bold text-pink-700 text-2xl md:text-8xl leading-tight m-24 ">
-          Our Clients
+        <p className="text-primary text-2xl md:text-8xl leading-tight m-24 ">
+          our clients
         </p>
       </div>
 

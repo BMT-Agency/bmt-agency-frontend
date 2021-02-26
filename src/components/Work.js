@@ -6,12 +6,12 @@ import screen from "../images/ScreenShot.png"
 export default function Work() {
   return (
     <>
-      <div className="grid grid-cols-4 gap-4 p-5 mb-24 ">
+      <div className="grid grid-cols-4 gap-4 p-5 mb-24 grid-grid-rows-1">
         <div className="col-span-2 flex flex-col justify-between">
-          <h1 className="font-bold text-pink-700 text-2xl md:text-8xl leading-tight m-24">
-            Work
+          <h1 className="text-primary text-2xl md:text-8xl leading-tight m-24">
+            work
           </h1>
-          <p className="text-gray-400 ">
+          <p className="text-secondary ">
             To associate the characteristics of BMT as an agency, the rhetorical
             image of horses.
           </p>
@@ -19,7 +19,7 @@ export default function Work() {
 
         <div className="container mx-auto p-0 col-span-2 mt-32 mb-32">
           <div className="mb-8">
-            <span className="text-gray-400">Explore our work</span>
+            <span className="text-secondary">Explore our work</span>
           </div>
 
           <div className="grid grid-rows-3 grid-flow-col gap-4">

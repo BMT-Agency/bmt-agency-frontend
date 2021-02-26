@@ -6,12 +6,16 @@ import { FooterOne, Footer } from "../components/Footer"
 export default function Contact() {
   return (
     <>
+      <header>
+        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
+      </header>
+
       <Nav />
 
       <div className="mb-20 ml-28">
         <p className="text-6xl text-pink-900 font-bold mb-8">contact</p>
         <span className="text-gray-400">
-          To associate thecharacteristics of BMT as <br /> an agency, the
+          To associate the characteristics of BMT as <br /> an agency, the
           retorical image of horses
         </span>
       </div>

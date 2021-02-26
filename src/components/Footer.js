@@ -16,7 +16,9 @@ export function FooterOne() {
 
         <div className="bg-pink-800 text-center mt-64 ">
           <div className="flex justify-center mt-72">
-            <span className="text-white text-6xl font-bold">contact</span>
+            <Link to="/contact" className="text-white text-6xl font-bold">
+              contact
+            </Link>
             <img src={arrowRigth} />
           </div>
         </div>
