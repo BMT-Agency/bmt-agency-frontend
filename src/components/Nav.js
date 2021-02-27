@@ -40,7 +40,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <div className="flex flex-row-reverse space-x-4 space-x-reverse place-items-center">
+      <div className="flex flex-row-reverse space-x-4 space-x-reverse">
         <DropDowMenu />
       </div>
     </div>

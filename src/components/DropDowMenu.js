@@ -50,7 +50,7 @@ export default function DropDowMenu() {
         {isActive && (
           <div
             ref={dropdownRef}
-            className="transform translate-x-16 bg-pink-700 text-white absolute text-5xl"
+            className="transform -translate-x-32 bg-pink-700 text-white absolute text-5xl w-96 h-auto text-center"
           >
             <ul>
               <li>
