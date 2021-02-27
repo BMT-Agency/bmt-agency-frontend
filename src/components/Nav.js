@@ -38,10 +38,11 @@ export default function Nav() {
               EN
             </a>
           </div>
-
-          <DropDowMenu />
         </div>
       </nav>
+      <div className="flex flex-row-reverse space-x-4 space-x-reverse place-items-center">
+        <DropDowMenu />
+      </div>
     </div>
   )
 }
