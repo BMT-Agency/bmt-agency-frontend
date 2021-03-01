@@ -16,7 +16,7 @@ export default function ProjectLayout() {
     <>
       <Nav />
       <div className="w-full">
-        <img src={headerbg} className="w-full" />
+        <img src={headerbg} alt="img" className="w-full" />
       </div>
 
       <div className="grid grid-cols-2 mt-16 ml-16">
@@ -54,18 +54,18 @@ export default function ProjectLayout() {
           </div>
 
           <div>
-            <img src={logo} className="w-72" />
+            <img src={logo} alt="img" className="w-72" />
           </div>
         </div>
 
         <div>
-          <img src={imgOne} />
+          <img src={imgOne} alt="img" />
         </div>
       </div>
 
       <div className="grid grid-cols-2">
         <div>
-          <img src={two} />
+          <img src={two} alt="img" />
         </div>
 
         <div className="mt-96 ml-24">
@@ -109,13 +109,13 @@ export default function ProjectLayout() {
         </div>
 
         <div>
-          <img src={five} className="w-9/12" />
+          <img src={five} alt="img" className="w-9/12" />
         </div>
       </div>
 
       <div className="grid grid-cols-2">
         <div>
-          <img src={four} />
+          <img src={four} alt="img" />
         </div>
 
         <div className="mt-96 ml-24">

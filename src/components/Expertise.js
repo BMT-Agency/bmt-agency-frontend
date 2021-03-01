@@ -10,7 +10,7 @@ import web from "../images/expertise/Web and app development.jpg"
 export default function Expertise() {
   return (
     <>
-      <div className="container grid grid-rows-1 h-screen ">
+      <div className="container h-screen ">
         <div className="grid grid-cols-2 gap-4 p-5 mb-24 row-span-full">
           <div className="col-span-1 flex flex-col justify-between">
             <h1 className="  text-primary text-2xl md:text-8xl leading-tight m-24">
@@ -26,7 +26,7 @@ export default function Expertise() {
               <img
                 src={marketing}
                 alt="marketing consulting"
-                className="w-full block rounded mt-9"
+                className="w-full block rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
               />
             </div>
 
@@ -37,13 +37,17 @@ export default function Expertise() {
               <img
                 src={digital}
                 alt="marketing dgital"
-                className="w-full block rounded mt-9"
+                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
               />
             </div>
 
             <div>
               <span className="text-primary">BTL </span>
-              <img src={btl} alt="btl" className="w-full block rounded mt-9" />
+              <img
+                src={btl}
+                alt="btl"
+                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              />
             </div>
 
             <div>
@@ -53,7 +57,7 @@ export default function Expertise() {
               <img
                 src={graphic}
                 alt="graphic design"
-                className="w-full block rounded mt-9"
+                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
               />
             </div>
 
@@ -62,7 +66,7 @@ export default function Expertise() {
               <img
                 src={multimedia}
                 alt="multimedia"
-                className="w-full block rounded mt-9"
+                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
               />
             </div>
 
@@ -73,7 +77,7 @@ export default function Expertise() {
               <img
                 src={web}
                 alt="neuromarketing"
-                className="w-full block rounded mt-9"
+                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
               />
             </div>
           </div>

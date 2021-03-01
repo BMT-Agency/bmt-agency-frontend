@@ -1,7 +1,7 @@
 import React from "react"
 import Nav from "../components/Nav"
 
-import { FooterOne, Footer } from "../components/Footer"
+import { Footer } from "../components/Footer"
 
 export default function Contact() {
   return (

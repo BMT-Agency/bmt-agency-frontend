@@ -6,7 +6,7 @@ import screen from "../images/ScreenShot.png"
 export default function Work() {
   return (
     <>
-      <div className="grid grid-cols-4 gap-4 p-5 mb-24 grid-grid-rows-1">
+      <div className="grid grid-cols-4 gap-4 p-5 mb-24">
         <div className="col-span-2 flex flex-col justify-between">
           <h1 className="text-primary text-2xl md:text-8xl leading-tight m-24">
             work
@@ -24,15 +24,15 @@ export default function Work() {
 
           <div className="grid grid-rows-3 grid-flow-col gap-4">
             <div className="row-span-3">
-              <img src={packaging} />
+              <img src={packaging} alt="packaging" />
             </div>
 
             <div className="col-span-2">
-              <img src={social} />
+              <img src={social} alt="social" />
             </div>
 
             <div className="row-span-2 col-span-2">
-              <img src={screen} />
+              <img src={screen} alt="screen" />
             </div>
           </div>
         </div>

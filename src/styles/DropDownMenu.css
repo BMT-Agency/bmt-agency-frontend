@@ -1,0 +1,35 @@
+.navBar {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  background-color: #70164b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 1s ease;
+}
+
+nav ul {
+  list-style: none;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 30px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-size: 80px;
+}
+
+nav.isActive {
+  left: 0;
+}

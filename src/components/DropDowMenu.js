@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react"
 import { useDetectOutsideClick } from "../hooks/useDetectOutsideClick"
+import "../styles/DropDownMenu.css"
 
 import { Link } from "gatsby"
 
@@ -28,7 +29,10 @@ export default function DropDowMenu() {
 
   return (
     <>
-      <div className="relative">
+      <header>
+        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
+      </header>
+      <div className="">
         <button
           onClick={onClick}
           className="bg-pink-800 rounded-full w-12 h-12 hover:bg-pink-700 py-2 px-4 rounded inline-flex items-center"
@@ -47,24 +51,19 @@ export default function DropDowMenu() {
           </svg>
         </button>
 
-        {isActive && (
-          <div
-            ref={dropdownRef}
-            className="transform -translate-x-32 bg-pink-700 text-white absolute text-5xl w-96 h-auto text-center"
-          >
-            <ul>
-              <li>
-                <Link to="/">home</Link>
-              </li>
-              <li>
-                <Link to="/project">work</Link>
-              </li>
-              <li>
-                <Link to="/contact">contact</Link>
-              </li>
-            </ul>
-          </div>
-        )}
+        <nav ref={dropdownRef} className={`navBar ${isActive && "isActive"}`}>
+          <ul className="">
+            <li>
+              <Link to="/">home</Link>
+            </li>
+            <li>
+              <Link to="/project">work</Link>
+            </li>
+            <li>
+              <Link to="/contact">contact</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </>
   )

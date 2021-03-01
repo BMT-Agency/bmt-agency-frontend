@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Expertise from "../components/Expertise"
 import Work from "../components/Work"
 import Layout from "../layouts/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
 import Font from "../components/Font"
 import Banner from "../components/Banner"

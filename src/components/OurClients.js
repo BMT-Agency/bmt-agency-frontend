@@ -24,43 +24,43 @@ import bistro from "../images/clients/22_bistroOntheglen.svg"
 export default function OurClients() {
   return (
     <>
-      <div>
+      <div className="">
         <p className="text-primary text-2xl md:text-8xl leading-tight m-24 ">
           our clients
         </p>
       </div>
 
-      <div className="grid grid-rows-1 grid-flow-col gap-1 ml-40">
+      <div className="grid grid-flow-col gap-1 ml-40">
         <div className="row-span-3">
-          <img src={mercedes} className="mb-12" />
-          <img src={matc} className="mb-12" />
-          <img src={ambrosia} className="mb-12" />
-          <img src={rockford} className="mb-12" />
-          <img src={scc} className="mb-12" />
+          <img src={mercedes} alt="client" className="mb-12" />
+          <img src={matc} alt="client" className="mb-12" />
+          <img src={ambrosia} alt="client" className="mb-12" />
+          <img src={rockford} alt="client" className="mb-12" />
+          <img src={scc} alt="client" className="mb-12" />
         </div>
 
         <div className="row-span-3 mb-12 container">
-          <img src={wendy} className="mb-12" />
-          <img src={reskill} className="mb-12" />
-          <img src={willis} className="mb-12" />
-          <img src={cep} className="mb-12" />
-          <img src={ds} className="mb-12" />
+          <img src={wendy} alt="client" alt="client" className="mb-12" />
+          <img src={reskill} alt="client" alt="client" className="mb-12" />
+          <img src={willis} alt="client" alt="client" className="mb-12" />
+          <img src={cep} alt="client" alt="client" className="mb-12" />
+          <img src={ds} alt="client" alt="client" className="mb-12" />
         </div>
 
         <div className="row-span-3">
-          <img src={iheart} className="mb-12" />
-          <img src={wis} className="mb-12" />
-          <img src={iconic} className="mb-12" />
-          <img src={wwbic} className="mb-12 w-20" />
-          <img src={kbs} className="mb-12" />
+          <img src={iheart} alt="client" className="mb-12" />
+          <img src={wis} alt="client" className="mb-12" />
+          <img src={iconic} alt="client" className="mb-12" />
+          <img src={wwbic} alt="client" className="mb-12 w-20" />
+          <img src={kbs} alt="client" className="mb-12" />
         </div>
 
         <div>
-          <img src={wacker} className="mb-12" />
-          <img src={tenderness} className="mb-12" />
-          <img src={viking} className="mb-12" />
-          <img src={donut} className="mb-12" />
-          <img src={bistro} className="mb-12" />
+          <img src={wacker} alt="client" className="mb-12" />
+          <img src={tenderness} alt="client" className="mb-12" />
+          <img src={viking} alt="client" className="mb-12" />
+          <img src={donut} alt="client" className="mb-12" />
+          <img src={bistro} alt="client" className="mb-12" />
         </div>
       </div>
     </>

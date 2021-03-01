@@ -14,16 +14,17 @@ const Header = () => {
       </header>
 
       <Nav />
-      <div className="container grid-grid-rows-1 h-screen">
+      <div className="container h-screen">
         <div className=" md:mx-auto md:flex md:items-center md:justify-between">
           <video
+            muted
             src={video}
             autoPlay
             loop
             className="absolute top-0 ml-52"
           ></video>
 
-          <div className="mt-60 ml-64">
+          <div className="mt-60 ml-60">
             <span className=" text-primary text-5xl md:text-9xl leading-tight mb-4 absolute">
               data <br />
               <span className=" text-secondary text-5xl md:text-9xl leading-tight mb-4">
