@@ -1,14 +1,9 @@
 import React from "react"
-
-import Expertise from "../components/Expertise"
-import Work from "../components/Work"
 import Layout from "../layouts/layout"
-
 import SEO from "../components/seo"
 import Font from "../components/Font"
-import Banner from "../components/Banner"
-import OurClients from "../components/OurClients"
-import { FooterOne, Footer } from "../components/Footer"
+
+// import "tailwindcss/tailwind.css"
 
 const IndexPage = () => (
   <>
@@ -16,12 +11,6 @@ const IndexPage = () => (
       <Font />
       <SEO title="Home" />
     </Layout>
-    <Expertise />
-    <Work />
-    <Banner />
-    <OurClients />
-    <FooterOne />
-    <Footer />
   </>
 )
 

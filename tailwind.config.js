@@ -12,7 +12,7 @@ module.exports = {
     fontFamily: {
       sans: ["itc-avant-garde-gothic-pro, sans-serif"],
     },
-  },
+},
 
   // backgroundImage: theme =>
   //   theme({

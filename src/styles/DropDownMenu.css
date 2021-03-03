@@ -33,3 +33,9 @@ nav ul li {
 nav.isActive {
   left: 0;
 }
+.bg-purple {
+  background-color: #7E1B55;
+}
+.bg-rouge {
+  background-color: #70164B;
+}

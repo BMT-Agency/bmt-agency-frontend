@@ -2,19 +2,21 @@ import React from "react"
 import { Link } from "gatsby"
 import arrowRigth from "../images/icons/Arrow Right.svg"
 import logo from "../images/bmt-logo-white.svg"
+import "../styles/DropDownMenu.css"
+
 
 export function FooterOne() {
   return (
     <>
       <div className="grid grid-cols-2 ">
-        <div className="bg-pink-800 text-center h-96 mt-64">
+        <div className="bg-purple text-center h-96 mt-64">
           <div className="flex justify-center mt-72">
             <span className="text-white text-6xl font-bold">work</span>
             <img src={arrowRigth} />
           </div>
         </div>
 
-        <div className="bg-pink-900 text-center mt-64 ">
+        <div className="bg-rouge text-center mt-64 ">
           <div className="flex justify-center mt-72">
             <Link to="/contact" className="text-white text-6xl font-bold">
               contact
@@ -30,7 +32,7 @@ export function FooterOne() {
 export function Footer() {
   return (
     <>
-      <div className="grid grid-cols-2 bg-pink-800 p-12">
+      <div className="grid grid-cols-2 bg-purple p-12">
         <div className="ml-16">
           <img src={logo} alt="logo" className />
 
