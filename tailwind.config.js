@@ -13,7 +13,6 @@ module.exports = {
       sans: ["itc-avant-garde-gothic-pro, sans-serif"],
     },
   },
-
   // backgroundImage: theme =>
   //   theme({
   //     horse: "url('/src/images/video/Caballo 2.mp4')",

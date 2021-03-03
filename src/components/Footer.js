@@ -47,8 +47,8 @@ export function Footer() {
               Sitemap
             </Link>
             <Link to="/">Home</Link>
-            <Link to="/">Work</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="flex justify-end mt-40 items-center">

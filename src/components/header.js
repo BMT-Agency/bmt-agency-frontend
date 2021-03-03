@@ -21,7 +21,7 @@ const Header = () => {
             src={video}
             autoPlay
             loop
-            className="absolute top-0 ml-52"
+            className="absolute top-0 ml-52 "
           ></video>
 
           <div className="mt-60 ml-60">
