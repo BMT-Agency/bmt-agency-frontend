@@ -31,15 +31,14 @@ export default function OurClients() {
       </div>
 
       <div className="grid grid-flow-col gap-1 ml-40">
-        <div className="row-span-3">
+        <div className="grid row-span-2 md:row-span-4">
           <img src={mercedes} alt="client" className="mb-12" />
           <img src={matc} alt="client" className="mb-12" />
           <img src={ambrosia} alt="client" className="mb-12" />
           <img src={rockford} alt="client" className="mb-12" />
           <img src={scc} alt="client" className="mb-12" />
         </div>
-
-        <div className="row-span-3 mb-12 container">
+        <div className="grid row-span-2 md:row-span-4">
           <img src={wendy} alt="client" alt="client" className="mb-12" />
           <img src={reskill} alt="client" alt="client" className="mb-12" />
           <img src={willis} alt="client" alt="client" className="mb-12" />
@@ -47,7 +46,7 @@ export default function OurClients() {
           <img src={ds} alt="client" alt="client" className="mb-12" />
         </div>
 
-        <div className="row-span-3">
+        <div className="grid row-span-2 md:row-span-4">
           <img src={iheart} alt="client" className="mb-12" />
           <img src={wis} alt="client" className="mb-12" />
           <img src={iconic} alt="client" className="mb-12" />
@@ -55,7 +54,7 @@ export default function OurClients() {
           <img src={kbs} alt="client" className="mb-12" />
         </div>
 
-        <div>
+        <div className="grid row-span-2 md:row-span-4">
           <img src={wacker} alt="client" className="mb-12" />
           <img src={tenderness} alt="client" className="mb-12" />
           <img src={viking} alt="client" className="mb-12" />
