@@ -2,13 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import Nav from "../components/Nav"
 import { Footer } from "../components/Footer"
-
 import PropTypes from "prop-types"
 import Pagination from "../components/Pagination"
 
 export default function WorkLayout(props) {
   const { projects, pageContext } = props
-
+  console.log(projects)
   return (
     <>
       {projects.map(project => {
@@ -28,7 +27,6 @@ export default function WorkLayout(props) {
     </>
   )
 }
-
 WorkLayout.propTypes = {
   siteTitle: PropTypes.string,
 }

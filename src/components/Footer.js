@@ -68,7 +68,7 @@ export function Footer() {
             <div>
               <a
                 href=""
-                class="border-2 border-white font-bold text-white ml-4 px-12  py-4 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-6"
+                className="border-2 border-white font-bold text-white ml-4 px-12  py-4 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-6"
               >
                 Join
               </a>

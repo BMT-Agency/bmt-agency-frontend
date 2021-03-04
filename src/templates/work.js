@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import WorkLayout from "../layouts/WoktLayout"
+import WorkLayout from "../layouts/WorkLayout"
 
 export default function Project(props) {
   const { data, pageContext } = props

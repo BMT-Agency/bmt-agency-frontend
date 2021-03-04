@@ -4,8 +4,10 @@ import contactLayout from '../layouts/contactLayout'
 import { Footer } from "../components/Footer"
 
 
-export default contactPage = () => (
+const contactPage = () => (
   <>
     <contactLayout />
   </>
 )
+
+export default contactPage

@@ -7,17 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import Nav from "../components/Nav"
 import Header from "../components/header"
 import { Footer } from "../components/Footer"
 
 
-export default function  contactLayout() {
+export default function  contactLayout(props) {
+const {siteTitle} = props;
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={siteTitle} />
 
       <Nav />
       <div className="mb-20 ml-28">
@@ -224,4 +224,3 @@ export default function  contactLayout() {
 contactLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
