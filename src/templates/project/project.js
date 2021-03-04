@@ -1,4 +1,5 @@
 import React from "react"
+import { Footer } from "../../components/Footer"
 
 export default function Project(props) {
   const {
@@ -18,12 +19,14 @@ export default function Project(props) {
         />
       </div>
 
-      <div className="grid grid-cols-2 ml-4 mt-4">
+      <div className="grid grid-cols-2 ml-4 mt-4 md:mt-20 md:ml-12">
         <div>
           <p className="text-secondary font-light text-1xl">client</p>
-          <p className="text-secondary text-1xl">{project.client}</p>
+          <p className="text-secondary text-1xl md:text-2xl">
+            {project.client}
+          </p>
           <p className="text-secondary font-light text-1xl">year</p>
-          <p className="text-secondary text-1xl">{project.year}</p>
+          <p className="text-secondary text-1xl md:text-2xl">{project.year}</p>
         </div>
 
         {/* <div className="ml-16">
@@ -31,50 +34,66 @@ export default function Project(props) {
         </div> */}
       </div>
 
-      <div className="ml-4 mt-4 flex">
-        <div>
+      <div className="ml-4 mt-4 flex md:grid grid-cols-2">
+        <div className="md:ml-8">
           <p className="text-secondary font-light text-1xl">category</p>
-          <p className="text-secondary ">{project.projectCategory}</p>
+          <p className="text-secondary md:text-2xl  ">
+            {project.projectCategory}
+          </p>
         </div>
 
-        <div className="">
+        <div className="md:-mt-44">
           <img src={project.challengImage.asset.url} />
         </div>
       </div>
 
-      <div>
-        <p className="text-secondary font-light text-1xl p-4">
+      <div className="md:grid grid-cols-3">
+        <p className="text-secondary font-light text-1xl p-4 md:ml-8 md:col-span-1 md:-mt-56 ">
           {project.challenge}
         </p>
       </div>
 
-      <div className="">
-        <img src={project.inspirationImage.asset.url} className=" w-11/12" />
+      <div className="md:grid grid-cols-2">
+        <div>
+          <img
+            src={project.inspirationImage.asset.url}
+            className=" w-11/12  md:w-full"
+          />
+        </div>
+
+        <div>
+          <p className="text-secondary font-light text-1xl p-4 md:ml-8 md:mt-96">
+            {project.inspiration}
+          </p>
+        </div>
       </div>
 
-      <div>
-        <p className="text-secondary font-light text-1xl p-4">
-          {project.inspiration}
-        </p>
+      <div className=" md:grid grid-cols-2">
+        <div>
+          <p className="text-secondary font-light text-1xl p-4 md:mt-64 md:ml-8">
+            {project.idea}
+          </p>
+        </div>
+        <div className="w-full ">
+          <img src={project.ideaImage.asset.url} className="md:-mt-72" />
+        </div>
       </div>
 
-      <div className="w-full">
-        <img src={project.ideaImage.asset.url} />
-      </div>
+      <div className="md:grid grid-cols-2">
+        <div className="w-full">
+          <img
+            src={project.processImage.asset.url}
+            className=" md:w-9/12 md:w-full md:-mt-60 "
+          />
+        </div>
 
-      <div>
-        <p className="text-secondary font-light text-1xl p-4">{project.idea}</p>
+        <div>
+          <p className="text-secondary font-light text-1xl p-4 md:mt-28 md:mr-8">
+            {project.process}
+          </p>
+        </div>
       </div>
-
-      <div className="w-full">
-        <img src={project.processImage.asset.url} />
-      </div>
-
-      <div>
-        <p className="text-secondary font-light text-1xl p-4">
-          {project.process}
-        </p>
-      </div>
+      <Footer />
     </>
   )
 }

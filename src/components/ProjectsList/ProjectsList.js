@@ -1,15 +1,26 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function ProjectsList(props) {
-  console.log("props", props)
   const { projects } = props
 
-  console.log("projects:", projects)
   return (
-    <div>
-      {projects.map(project => (
-        <h1>{project.title}</h1>
-      ))}
-    </div>
+    <>
+      {projects.map(project => {
+        return (
+          <div key={project.id} className="project-wrapper">
+            <Link to={`/${project.slug.current}`}>
+              <img
+                src={project.mainImage.asset.url}
+                className="w-auto h-auto md:w-full"
+              />
+            </Link>
+          </div>
+        )
+      })}
+
+      {/* <Pagination pageContext={pageContext} />
+      <Footer /> */}
+    </>
   )
 }
