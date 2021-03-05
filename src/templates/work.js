@@ -1,16 +1,21 @@
-
 import React from "react"
 import { graphql } from "gatsby"
 import WorkLayout from "../layouts/WorkLayout"
 import ProjectsList from "../components/ProjectsList"
 import Pagination from "../components/Pagination"
+import { Footer, FooterOne } from "../components/Footer"
+import Nav from "../components/Nav"
+
 export default function Project(props) {
   const { data, pageContext } = props
   const projects = data.allSanityProjects.nodes
   return (
     <WorkLayout>
+      <Nav />
       <ProjectsList projects={projects} />
       <Pagination pageContext={pageContext} />
+      <FooterOne />
+      <Footer />
     </WorkLayout>
   )
 }

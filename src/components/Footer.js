@@ -13,7 +13,7 @@ export function FooterOne() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-purple text-center ">
           <div className="flex justify-center m-16 ">
-            <Link to="/work" className="text-white text-6xl ">
+            <Link to="/work" className="text-white text-6xl md:mt-60 ">
               work →
             </Link>
           </div>
@@ -21,7 +21,10 @@ export function FooterOne() {
 
         <div className="bg-rouge text-center  ">
           <div className="flex justify-center m-16">
-            <Link to="/contact" className="text-white text-5xl">
+            <Link
+              to="/contact"
+              className="text-white text-5xl md:text-6xl md:mt-60"
+            >
               contact →
             </Link>
           </div>
@@ -39,7 +42,7 @@ export function Footer() {
           <img src={logo} alt="logo" className />
         </div>
 
-        <div className="text-white md:text-end">
+        <div className="text-white md:text-right">
           <div className="flex flex-col mt-8 ">
             <Link
               to="/"
@@ -55,11 +58,7 @@ export function Footer() {
             >
               Home
             </Link>
-            <Link
-              to="/work"
-              className="text-sm font-thin leading-8
-"
-            >
+            <Link to="/work" className="text-sm font-thin leading-8 md:mr-76">
               Work
             </Link>
             <Link
@@ -75,7 +74,7 @@ export function Footer() {
             <div className="flex w-60 my-8 mx-4 md:mx-2 border-b-2 border-white hover:border-white">
               <div className="">
                 <input
-                  className="w-full mt-8 md:pl-8 border-0 focus:outline-none text-white bg-pink-800"
+                  className="w-full mt-8 md:pl-8 border-0 focus:outline-none text-white bg-transparent"
                   placeholder="enter your email"
                   type="email"
                   required
@@ -86,7 +85,7 @@ export function Footer() {
             <div>
               <Link
                 to="/"
-                className="border-2 border-white font-bold text-white ml-4 p-4 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white mr-6"
+                className="border-2 border-white font-bold text-white ml-4 p-4 transition duration-300 ease-in-out hover:bg-pink-900 hover:text-white mr-6"
               >
                 Join
               </Link>
@@ -94,7 +93,7 @@ export function Footer() {
           </div>
         </div>
         <div className="">
-          <p className="text-white text-sm font-thin">
+          <p className="text-white text-sm font-thin md:ml-12">
             BMT Agency &copy; 2021.All rights reserved.
           </p>
         </div>
