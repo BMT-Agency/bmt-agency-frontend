@@ -1,12 +1,11 @@
 import React from "react"
 import Nav from "../components/Nav"
-import contactLayout from '../layouts/contactLayout'
+import ContactLayout from "../layouts/ContactLayout.js"
 import { Footer } from "../components/Footer"
-
 
 const contactPage = () => (
   <>
-    <contactLayout />
+    <ContactLayout />
   </>
 )
 

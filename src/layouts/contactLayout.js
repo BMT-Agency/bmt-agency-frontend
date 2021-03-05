@@ -11,14 +11,11 @@ import Nav from "../components/Nav"
 import Header from "../components/header"
 import { Footer } from "../components/Footer"
 
-
-export default function  contactLayout(props) {
-const {siteTitle} = props;
+export default function ContactLayout(props) {
+  const { siteTitle } = props
 
   return (
     <>
-      <Header siteTitle={siteTitle} />
-
       <Nav />
       <div className="mb-20 ml-28">
         <p className="text-6xl text-pink-900 font-bold mb-8">contact</p>
@@ -216,11 +213,11 @@ const {siteTitle} = props;
           </div>
         </div>
       </div>
-    <Footer />
+      <Footer />
     </>
   )
 }
 
-contactLayout.propTypes = {
+ContactLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }

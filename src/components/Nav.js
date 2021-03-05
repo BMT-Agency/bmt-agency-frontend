@@ -14,26 +14,26 @@ export default function Nav() {
           <div className=" w-8 mb-2 h-0.25 -ml-32 flex md:-ml-72">
             <a
               href="#"
-              className="md:inline-block sm:flex hidden py-1 md:py-4 text-primary font-light hover:text-primary mr-6 "
+              className="md:inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 "
             >
               FB
             </a>
             <a
               href="#"
-              className="hidden inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 sm:flex "
+              className="inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 sm:flex "
             >
               IG
             </a>
             <a
               href="#"
-              className="sm:flex hidden inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6"
+              className=" inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6"
             >
               YT
             </a>
 
             <a
               href="#"
-              className="ml-16  inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
+              className=" ml-16  inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
             >
               EN
             </a>

@@ -1,7 +1,6 @@
 import React from "react"
 import packaging from "../images/Packaging Square.jpg"
-import social from "../images/SocialmediaProject .png"
-import donuts from "../images/Cover_recortado.png"
+import donuts from "../images/donuts.jpg"
 
 export default function Work() {
   return (
@@ -25,12 +24,8 @@ export default function Work() {
           </div>
 
           <div className="sm:display hidden md:flex ">
-            <img src={social} alt="social" className="w-6/12" />
-          </div>
-
-          <div className="sm:display hidden md:flex ">
             <div className="row-span-2">
-              <img src={donuts} alt="screen" className="w-6/12 h-full" />
+              <img src={donuts} alt="screen" className="transform rotate-90" />
             </div>
           </div>
         </div>

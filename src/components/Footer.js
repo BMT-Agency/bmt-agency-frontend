@@ -7,6 +7,9 @@ import "../styles/DropDownMenu.css"
 export function FooterOne() {
   return (
     <>
+      <header>
+        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
+      </header>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-purple text-center ">
           <div className="flex justify-center m-16 ">
