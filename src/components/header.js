@@ -16,9 +16,9 @@ const Header = () => {
 
       <Nav />
 
-      <div className="">
-        <div>
-          <img src={horse} alt="horse" className="sm:w-full" />
+      <div className="relative">
+        <div clas>
+          <img src={horse} alt="horse" className="sm:w-full md:hidden" />
         </div>
 
         <div className="">
@@ -26,18 +26,27 @@ const Header = () => {
             <video muted src={video} autoPlay loop></video>
           </div>
 
-          <div className="">
-            <span className=" ">
-              data <br />
-              <span className=" ">driven</span>
-              <p className="">digital marketing experience</p>
-            </span>
+          <div className="absolute ml-32 -m-52  md:-mt-96">
+            <div className="text-left ">
+              <span className="text-primary text-7xl md:text-8xl">
+                data <br />
+                <span className="text-secondary ">driven</span>
+              </span>
+            </div>
+
+            <p className="text-primary text-base md:text-2xl md">
+              digital marketing experience
+            </p>
           </div>
-          <div className=" ">
-            <Link to="/" className="">
-              Let's work together
-            </Link>
-          </div>
+        </div>
+
+        <div className=" ">
+          <Link
+            to="/"
+            className="text-primary ml-4 md:mr-16 md:flex justify-end"
+          >
+            Let's work together →
+          </Link>
         </div>
       </div>
     </>

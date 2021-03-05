@@ -1,34 +1,36 @@
 import React from "react"
 import packaging from "../images/Packaging Square.jpg"
 import social from "../images/SocialmediaProject .png"
-import screen from "../images/ScreenShot.png"
+import donuts from "../images/Cover_recortado.png"
 
 export default function Work() {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 p-5 mb-24 block">
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
-          <h1 className="text-primary text-2xl md:text-8xl leading-tight m-24">
+      <div>
+        <div>
+          <p className="text-primary text-6xl mt-32 ml-4 mb-4 md:text- ">
             work
-          </h1>
+          </p>
+          <p className="text-secondary text-sm mb-8 ml-4 mr-16 md:hidden">
+            To associate the characteristics of BMT as an agency, the rhetorical
+            image of horses.
+          </p>
         </div>
 
-        <div className=" mx-auto p-0 col-span-2 mt-32 mb-32">
-          <div className="mb-8">
-            <span className="text-secondary">Explore our work</span>
+        <div className="md:grid grid-rows-3 grid-flow-col md:grid grid-cols-3 ">
+          <div></div>
+
+          <div className="row-span-3">
+            <img src={packaging} alt="packaging" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
-          {/* <div className="grid grid-rows-3 grid-flow-col gap-4"> */}
-            <div className="row-span-3">
-              <img src={packaging} alt="packaging" />
-            </div>
 
-            <div className="col-span-2">
-              <img src={social} alt="social" />
-            </div>
+          <div className="sm:display hidden md:flex ">
+            <img src={social} alt="social" className="w-6/12" />
+          </div>
 
-            <div className="row-span-2 col-span-2">
-              <img src={screen} alt="screen" />
+          <div className="sm:display hidden md:flex ">
+            <div className="row-span-2">
+              <img src={donuts} alt="screen" className="w-6/12 h-full" />
             </div>
           </div>
         </div>

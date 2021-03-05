@@ -33,12 +33,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      {/* <Expertise />
-    <Work />
-    <Banner />
-    <OurClients />
-    <FooterOne />
-    <Footer /> */}
+      <Expertise />
+      <Work />
+      <Banner />
+      <OurClients />
+
+      {/* <FooterOne />
+      <Footer /> */}
     </>
   )
 }

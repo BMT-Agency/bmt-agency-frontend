@@ -10,85 +10,84 @@ import web from "../images/expertise/Web and app development.jpg"
 export default function Expertise() {
   return (
     <>
-      <div className="container h-screen block">
-        <div className="grid grid-cols-1 gap-4 p-5 mb-24 row-span-full">
-
-          <div className="col-span-1 flex flex-col justify-between">
-            <h1 className="text-primary text-2xl md:text-8xl leading-tight m-24">
-              expertise
-            </h1>
-            <p className="text-secondary">
+      <div>
+        <div>
+          <h1 className="text-primary text-6xl mt-32 ml-4 mb-4 md:text-6xl ">
+            expertise
+          </h1>
+          <p className="text-secondary text-sm mb-8 ml-4 mr-16 md:hidden">
             To associate the characteristics of BMT as an agency, the rhetorical
             image of horses.
           </p>
+        </div>
+
+        <div className="ml-4 md:grid grid-cols-3">
+          <div></div>
+          <div className="md:flex md:flex-col">
+            <span className="text-primary mr-16 ">
+              Marketing <span className="text-secondary">Consulting</span>{" "}
+            </span>
+            <img
+              src={marketing}
+              alt="marketing consulting"
+              className="w-full md:mb-12 md:w-4/6 rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
+            />
           </div>
 
-          <div className="grid md:grid-cols-4 gap-4">
-            </div>
+          <div className="sm:flex hidden md:flex md:flex-col ">
+            <span className="text-primary  mr-16  ">
+              Digital <span className="text-secondary">Marketing</span>{" "}
+            </span>
+            <img
+              src={digital}
+              alt="marketing dgital"
+              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+            />
+          </div>
+          <div></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary ">
-                Marketing <span className="text-secondary">Consulting</span>{" "}
-              </span>
-              <img
-                src={marketing}
-                alt="marketing consulting"
-                className="w-full  rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
-              />
-            </div>
+          <div className="sm:flex hidden md:flex md:flex-col">
+            <span className="text-primary  mr-16">BTL </span>
+            <img
+              src={btl}
+              alt="btl"
+              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+            />
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary">
-                Digital <span className="text-secondary">Marketing</span>{" "}
-              </span>
-              <img
-                src={digital}
-                alt="marketing dgital"
-                className="w-full rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
-              />
-            </div>
+          <div className="sm:flex hidden md:flex md:flex-col">
+            <span className="text-primary  mr-16 ">
+              Graphic <span className="text-secondary">Design</span>{" "}
+            </span>
+            <img
+              src={graphic}
+              alt="graphic design"
+              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+            />
+          </div>
+          <div></div>
 
-            {/*<div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary">BTL </span>
-              <img
-                src={btl}
-                alt="btl"
-                className="w-full rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
-              />
-            </div>
+          <div className="sm:flex hidden md:flex md:flex-col">
+            <span className="text-primary  mr-16 ">Multimedia</span>
+            <img
+              src={multimedia}
+              alt="multimedia"
+              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+            />
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary">
-                Graphic <span className="text-secondary">Design</span>{" "}
-              </span>
-              <img
-                src={graphic}
-                alt="graphic design"
-                className="w-full rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary">Multimedia</span>
-              <img
-                src={multimedia}
-                alt="multimedia"
-                className="w-full rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 block text-lg">
-              <span className="text-primary">
-                Web & <span className="text-secondary">Development</span>{" "}
-              </span>
-              <img
-                src={web}
-                alt="neuromarketing"
-                className="w-full block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
-              />
-             </div> */}
+          <div className="sm:flex hidden md:flex md:flex-col">
+            <span className="text-primary  mr-16  ">
+              Web<span className="text-secondary"> & Development</span>{" "}
+            </span>
+            <img
+              src={web}
+              alt="neuromarketing"
+              className="w-full md:mb-12 md:w-4/6 block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+            />
+          </div>
+        </div>
       </div>
-    </div>
     </>
   )
 }
