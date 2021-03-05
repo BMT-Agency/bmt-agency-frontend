@@ -1,0 +1,19 @@
+
+.bg-purple {
+  background-color: #7E1B55;
+}
+
+.border-purple {
+  border-color: #7E1B55;
+}
+
+.placeholder-text-purple {
+  color: #7E1B55;
+}
+
+.wrapper input  {
+  font-size: larger;
+  color: #7E1B55;
+  border-color: #7E1B55;
+  background-color: white;
+}
