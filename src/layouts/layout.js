@@ -37,9 +37,8 @@ const Layout = ({ children }) => {
       <Work />
       <Banner />
       <OurClients />
-
-      {/* <FooterOne />
-      <Footer /> */}
+      <FooterOne />
+      <Footer />
     </>
   )
 }
