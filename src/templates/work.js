@@ -1,16 +1,19 @@
+
 import React from "react"
 import { graphql } from "gatsby"
-
 import WorkLayout from "../layouts/WorkLayout"
-
+import ProjectsList from "../components/ProjectsList"
+import Pagination from "../components/Pagination"
 export default function Project(props) {
   const { data, pageContext } = props
-
   const projects = data.allSanityProjects.nodes
-
-  return <WorkLayout projects={projects} pageContext={pageContext}></WorkLayout>
+  return (
+    <WorkLayout>
+      <ProjectsList projects={projects} />
+      <Pagination pageContext={pageContext} />
+    </WorkLayout>
+  )
 }
-
 export const query = graphql`
   query Projects($skip: Int!, $limit: Int!) {
     allSanityProjects(skip: $skip, limit: $limit) {

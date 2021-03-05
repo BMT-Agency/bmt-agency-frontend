@@ -14,11 +14,10 @@ exports.createPages = async ({ actions, graphql }) => {
   // Fetch your items (blog posts, categories, etc).
   const projects = await graphql(`
     query Projects {
-      allSanityProjects {
+      allSanityProjects(sort: { order: ASC, fields: _createdAt }) {
         nodes {
           id
           title
-          year
           challenge
           idea
           inspiration
@@ -73,24 +72,24 @@ exports.createPages = async ({ actions, graphql }) => {
               url
             }
           }
+          year
         }
       }
     }
   `)
 
-  // console.log(projects.data.allSanityProjects.nodes)
+  // console.log("projects.data:", projects.data.allSanityProjects.nodes)
 
   // Create your paginated pages
   paginate({
     createPage, // The Gatsby `createPage` function
     items: projects.data.allSanityProjects.nodes, // An array of objects
-
     itemsPerPage: 3, // How many items you want per page
     pathPrefix: "/work", // Creates pages like `/blog`, `/blog/2`, etc
     component: path.resolve(`src/templates/work.js`), // Just like `createPage()`
   })
 
-  console.log(projects.data.allSanityProjects.nodes)
+  // console.log(projects.data.allSanityProjects.nodes)
 
   projects.data.allSanityProjects.nodes.forEach(project => {
     createPage({

@@ -8,7 +8,7 @@ import "../styles/DropDownMenu.css"
 export function FooterOne() {
   return (
     <>
-      <div className="grid grid-cols-2 ">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-purple text-center h-96 mt-64">
           <div className="flex justify-center mt-72">
             <span className="text-white text-6xl font-bold">work</span>
@@ -32,7 +32,7 @@ export function FooterOne() {
 export function Footer() {
   return (
     <>
-      <div className="grid grid-cols-2 bg-purple p-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-purple p-12">
         <div className="ml-16">
           <img src={logo} alt="logo" className />
 
