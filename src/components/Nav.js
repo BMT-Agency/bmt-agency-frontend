@@ -13,30 +13,33 @@ export default function Nav() {
         <div>
           <div className=" w-8 mb-2 h-0.25 -ml-32 flex md:-ml-72">
             <a
-              href="#"
+              href="https://www.facebook.com/bmtagency"
+              target="_blank"
               className="md:inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 "
             >
               FB
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/bmtagency/"
+              target="_blank"
               className="inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 sm:flex "
             >
               IG
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCrYRjxHcsq8PR9yLADh6fIA/featured"
+              target="_blank"
               className=" inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6"
             >
               YT
             </a>
 
-            <a
+            {/* <a
               href="#"
               className=" ml-16  inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
             >
               EN
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>
