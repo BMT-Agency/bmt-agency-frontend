@@ -27,10 +27,10 @@ export default function ContactLayout(props) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ml-28 container mb-60">
         <div>
-          <div className="my-8 mx-4 md:mx-2 border-b-2 border-pink-700 hover:border-pink-800 ">
-            <label className="self-center "></label>
+          <div className="my-8 mx-4 md:mx-2 border-b-2 border-secondary hover:border-pink-800 ">
+            <label className="self-center text-primary"></label>
             <input
-              className="w-full py-3 pl-5 md:pl-20 border-0 focus:outline-none placeholder-pink-700"
+              className="w-full py-3 pl-5 md:pl-20 border-0 focus:outline-none placeholder-text-primary"
               type="text"
               autocomplete="on"
               required
@@ -38,10 +38,10 @@ export default function ContactLayout(props) {
             />
           </div>
 
-          <div className="flex my-8 mx-4 md:mx-2 border-b-2 border-pink-700 hover:border-pink-800">
-            <label className="self-center text-pink-600"></label>
+          <div className="flex my-8 mx-4 md:mx-2 border-b-2 border-pink-700">
+            <label className="self-center text-primary"></label>
             <input
-              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none placeholder-pink-700"
+              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none placeholder-primary"
               type="phone"
               placeholder="Phone"
               required
@@ -49,9 +49,9 @@ export default function ContactLayout(props) {
           </div>
 
           <div className="flex my-8 mx-4 md:mx-2 border-b-2 border-pink-700 hover:border-pink-800">
-            <label className="self-center text-pink-600"></label>
+            <label className="self-center text-primary"></label>
             <input
-              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none placeholder-pink-700"
+              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none placeholder-text-primary"
               type="email"
               placeholder="Email"
               required

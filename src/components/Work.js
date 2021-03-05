@@ -1,6 +1,7 @@
 import React from "react"
 import packaging from "../images/Packaging Square.jpg"
 import donuts from "../images/donuts.jpg"
+import donutrotate from "../images/donutrotate.jpg"
 
 export default function Work() {
   return (
@@ -16,17 +17,19 @@ export default function Work() {
           </p>
         </div>
 
-        <div className="md:grid grid-rows-3 grid-flow-col md:grid grid-cols-3 ">
+        <div className="md:grid grid-cols-3  ">
           <div></div>
 
-          <div className="row-span-3">
-            <img src={packaging} alt="packaging" />
+          <div className="">
+            <img src={packaging} alt="packaging" className="md:h-7/12" />
           </div>
 
-          <div className="sm:display hidden md:flex ">
-            <div className="row-span-2">
-              <img src={donuts} alt="screen" className="transform rotate-90" />
-            </div>
+          <div className="  transform md:-rotate-90 ">
+            <img src={donuts} alt="screen" className="" />
+
+            {/* <div className="display hidden">
+                <img src={donutrotate} alt="donut" className="w-5/12  " />
+              </div> */}
           </div>
         </div>
       </div>
