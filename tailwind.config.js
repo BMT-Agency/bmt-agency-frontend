@@ -12,13 +12,18 @@ module.exports = {
     fontFamily: {
       sans: ["itc-avant-garde-gothic-pro, sans-serif"],
     },
+
+    // backgroundImage: theme =>
+    //   theme({
+    //     horse: "url('/src/images/video/Caballo 2.mp4')",
+    //   }),
+    variants: {
+      extend: {
+        backgroundImage: theme => ({
+          "horse-bg": "url('./src/images/Caballo 1.png)",
+        }),
+      },
+    },
+    plugins: [],
   },
-  // backgroundImage: theme =>
-  //   theme({
-  //     horse: "url('/src/images/video/Caballo 2.mp4')",
-  //   }),
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 }
