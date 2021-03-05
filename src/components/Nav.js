@@ -4,7 +4,7 @@ import DropDowMenu from "./DropDowMenu"
 
 export default function Nav() {
   return (
-    <div className="lg:container pl-12 sticky z-10 top-0 bg-opacity-0 w-auto">
+    <div className="lg:container pl-4 sticky z-10 top-0 bg-opacity-0 w-auto">
       <nav className="flex items-center sticky justify-between">
         <div className="flex items-center flex-no-shrink text-white mr-6  ">
           <img src={logo} alt="logo" />

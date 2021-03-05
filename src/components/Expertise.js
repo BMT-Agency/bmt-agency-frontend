@@ -46,7 +46,7 @@ export default function Expertise() {
           </div>
           <div></div>
 
-          <div className="sm:flex hidden md:flex md:flex-col">
+          <div className="md:flex-col">
             <span className="text-primary  mr-16">BTL </span>
             <img
               src={btl}
@@ -55,7 +55,7 @@ export default function Expertise() {
             />
           </div>
 
-          <div className="sm:flex hidden md:flex md:flex-col">
+          <div className="md:flex md:flex-col">
             <span className="text-primary  mr-16 ">
               Graphic <span className="text-secondary">Design</span>{" "}
             </span>
@@ -67,7 +67,7 @@ export default function Expertise() {
           </div>
           <div></div>
 
-          <div className="sm:flex hidden md:flex md:flex-col">
+          <div className="md:flex md:flex-col">
             <span className="text-primary  mr-16 ">Multimedia</span>
             <img
               src={multimedia}
@@ -76,7 +76,7 @@ export default function Expertise() {
             />
           </div>
 
-          <div className="sm:flex hidden md:flex md:flex-col">
+          <div className="sm: md:flex md:flex-col">
             <span className="text-primary  mr-16  ">
               Web<span className="text-secondary"> & Development</span>{" "}
             </span>

@@ -30,16 +30,15 @@ export default function OurClients() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 md:grid grid-cols-4  gap-2 m-4">
-        <div></div>
-        <div className=" md:row-span-4">
+      <div className="grid grid-cols-4 p-1 md:grid grid-cols-4 md:p-20 md:ml-96 ">
+        <div className=" ">
           <img src={mercedes} alt="client" className="mb-12" />
           <img src={matc} alt="client" className="mb-12" />
           <img src={ambrosia} alt="client" className="mb-12" />
           <img src={rockford} alt="client" className="mb-12" />
           <img src={scc} alt="client" className="mb-12" />
         </div>
-        <div className=" md:row-span-4">
+        <div className="">
           <img src={wendy} alt="client" alt="client" className="mb-12" />
           <img src={reskill} alt="client" alt="client" className="mb-12" />
           <img src={willis} alt="client" alt="client" className="mb-12" />
@@ -47,7 +46,7 @@ export default function OurClients() {
           <img src={ds} alt="client" alt="client" className="mb-12" />
         </div>
 
-        <div className=" md:row-span-4 ">
+        <div className="">
           <img src={iheart} alt="client" className="mb-12" />
           <img src={wis} alt="client" className="mb-12" />
           <img src={iconic} alt="client" className="mb-12" />
@@ -55,7 +54,7 @@ export default function OurClients() {
           <img src={kbs} alt="client" className="mb-12" />
         </div>
 
-        <div className=" hidden md:row-span-4">
+        <div className="">
           <div className="">
             <img src={wacker} alt="client" className="mb-12" />
             <img src={tenderness} alt="client" className="mb-12" />
