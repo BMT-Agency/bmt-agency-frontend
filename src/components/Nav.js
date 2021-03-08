@@ -11,7 +11,7 @@ export default function Nav() {
         </div>
 
         <div>
-          <div className=" w-8 mb-2 h-0.25 -ml-32 flex md:-ml-72">
+          <div className=" w-8 mb-2 h-0.25  flex ">
             <a
               href="https://www.facebook.com/bmtagency"
               target="_blank"

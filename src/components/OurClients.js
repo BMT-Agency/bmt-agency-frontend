@@ -25,12 +25,12 @@ export default function OurClients() {
   return (
     <>
       <div className="">
-        <p className="text-bmt text-6xl mt-32 ml-4 mb-4 md:text-   ">
+        <p className="text-bmt text-6xl mt-32 mb-4  ">
           our clients
         </p>
       </div>
 
-      <div className="grid grid-cols-4 p-1 md:grid grid-cols-4 md:p-20 md:ml-96 ">
+      <div className="grid grid-cols-4 p-1 md:grid-cols-4 md:p-20 justify-items-center">
         <div className=" ">
           <img src={mercedes} alt="client" className="mb-12" />
           <img src={matc} alt="client" className="mb-12" />

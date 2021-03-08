@@ -32,11 +32,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <div className="md:mx-60">
       <Header siteTitle={data.site.siteMetadata.title} />
       <Expertise />
       <Work />
       <Banner />
       <OurClients />
+      </div>
       <FooterOne />
       <Footer />
     </>

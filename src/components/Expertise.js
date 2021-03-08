@@ -24,66 +24,66 @@ export default function Expertise() {
         <div className="ml-4 md:grid grid-cols-3">
           <div></div>
           <div className="md:flex md:flex-col">
-            <span className="text-bmt mr-16 ">
+            <span className="text-bmt">
               Marketing <span className="text-bmtgray">Consulting</span>{" "}
             </span>
             <img
               src={marketing}
               alt="marketing consulting"
-              className="w-full md:mb-12 md:w-4/6 rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
+              className="w-full md:mb-12 rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
             />
           </div>
 
           <div className="sm:flex hidden md:flex md:flex-col ">
-            <span className="text-bmt  mr-16  ">
+            <span className="text-bmt">
               Digital <span className="text-bmtgray">Marketing</span>{" "}
             </span>
             <img
               src={digital}
               alt="marketing dgital"
-              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:mb-1 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
           <div></div>
 
           <div className="md:flex-col">
-            <span className="text-bmt  mr-16">BTL </span>
+            <span className="text-bmt">BTL </span>
             <img
               src={btl}
               alt="btl"
-              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
 
           <div className="md:flex md:flex-col">
-            <span className="text-bmt  mr-16 ">
+            <span className="text-bmt">
               Graphic <span className="text-bmtgray">Design</span>{" "}
             </span>
             <img
               src={graphic}
               alt="graphic design"
-              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
           <div></div>
 
           <div className="md:flex md:flex-col">
-            <span className="text-bmt  mr-16 ">Multimedia</span>
+            <span className="text-bmt">Multimedia</span>
             <img
               src={multimedia}
               alt="multimedia"
-              className="w-full md:mb-12 md:w-4/6 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
 
           <div className="sm: md:flex md:flex-col">
-            <span className="text-bmt  mr-16  ">
+            <span className="text-bmt">
               Web<span className="text-bmtgray"> & Development</span>{" "}
             </span>
             <img
               src={web}
               alt="neuromarketing"
-              className="w-full md:mb-12 md:w-4/6 block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:mb-12 block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
         </div>
