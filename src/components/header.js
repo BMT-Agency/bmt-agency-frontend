@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import VideoBg from "reactjs-videobg"
-import video from "../images/video/Caballo 2.mp4"
+import horseResponsive from "../images/video/horseResponsive.mp4"
+import video from "../images/video/horse.mp4"
 
 import PropTypes from "prop-types"
 
@@ -18,25 +19,25 @@ const Header = () => {
 
       <Nav />
 
-      <div className="relative">
-        <div>
-          <img src={horse} alt="horse" className="sm:w-full md:hidden" />
+      <div className="relative overflow-hidden -mt-44">
+        <div className="sm:w-full md:hidden">
+          <video muted src={horseResponsive} autoPlay loop></video>
         </div>
 
-        <div className="hero-video">
-          <div className="sm:flex hidden">
+        <div className="hero-video mt-12">
+          <div className="sm:flex hidden ml-80">
             <video muted src={video} autoPlay loop></video>
           </div>
 
           <div className="absolute ml-32 -m-52  md:-mt-96">
-            <div className="text-left ">
-              <span className="text-bmt text-7xl md:text-8xl">
+            <div className="text-left -mt-32">
+              <span className="text-bmt text-6xl md:text-9xl">
                 data <br />
                 <span className="text-bmtgray ">driven</span>
               </span>
             </div>
 
-            <p className="text-bmt text-base md:text-2xl md">
+            <p className="text-bmt text-sm md:text-2xl md">
               digital marketing experience
             </p>
           </div>

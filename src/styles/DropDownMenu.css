@@ -7,7 +7,7 @@
   background-color: #70164b;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: left 1s ease;
 }
@@ -27,15 +27,24 @@ nav ul li {
   padding: 30px;
   border-bottom: 1px solid white;
   cursor: pointer;
-  font-size: 80px;
+  font-size: 100px;
+}
+
+nav ul li :hover {
+  background-color: white;
+  color: #70164b;
 }
 
 nav.isActive {
-  left: 0;
+  left: -18px;
+  width: 100vw;
 }
 .bg-purple {
-  background-color: #7E1B55;
+  background-color: #7e1b55;
 }
 .bg-rouge {
-  background-color: #70164B;
+  background-color: #70164b;
+}
+
+@media screen and (min-width: 375px) {
 }
