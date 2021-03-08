@@ -6,9 +6,9 @@ export default function Banner() {
     <>
       <div className="md:grid grid-cols-2">
         <div className="mt-40 ml-4">
-          <p className="text-secondary text-5xl font-light md:ml-16 md:mt-16 ">
-            we do <span className="font-medium">amazing things</span> with
-            <span className="font-medium">amazing businesses.</span>
+          <p className="text-bmtgray text-5xl font-light md:ml-16 md:mt-16 ">
+            we do <span className="font-medium">amazing things</span>
+            <br /> with <span className="font-medium">amazing businesses.</span>
           </p>
         </div>
         <div className="mt-20">

@@ -21,12 +21,10 @@ export default function Project(props) {
 
       <div className="grid grid-cols-2 ml-4 mt-4 md:mt-20 md:ml-12">
         <div>
-          <p className="text-secondary font-light text-1xl">client</p>
-          <p className="text-secondary text-1xl md:text-2xl">
-            {project.client}
-          </p>
-          <p className="text-secondary font-light text-1xl">year</p>
-          <p className="text-secondary text-1xl md:text-2xl">{project.year}</p>
+          <p className="text-bmtgray font-light text-1xl">client</p>
+          <p className="text-bmtgray text-1xl md:text-2xl">{project.client}</p>
+          <p className="text-bmtgray font-light text-1xl">year</p>
+          <p className="text-bmtgray text-1xl md:text-2xl">{project.year}</p>
         </div>
 
         {/* <div className="ml-16">
@@ -36,8 +34,8 @@ export default function Project(props) {
 
       <div className="ml-4 mt-4 flex md:grid grid-cols-2">
         <div className="md:ml-8">
-          <p className="text-secondary font-light text-1xl">category</p>
-          <p className="text-secondary md:text-2xl  ">
+          <p className="text-bmtgray font-light text-1xl">category</p>
+          <p className="text-bmtgray md:text-2xl  ">
             {project.projectCategory}
           </p>
         </div>
@@ -48,7 +46,7 @@ export default function Project(props) {
       </div>
 
       <div className="md:grid grid-cols-3">
-        <p className="text-secondary font-light text-1xl p-4 md:ml-8 md:col-span-1 md:-mt-56 ">
+        <p className="text-bmtgray font-light text-1xl p-4 md:ml-8 md:col-span-1 md:-mt-56 ">
           {project.challenge}
         </p>
       </div>
@@ -62,7 +60,7 @@ export default function Project(props) {
         </div>
 
         <div>
-          <p className="text-secondary font-light text-1xl p-4 md:ml-8 md:mt-96">
+          <p className="text-bmtgray font-light text-1xl p-4 md:ml-8 md:mt-72">
             {project.inspiration}
           </p>
         </div>
@@ -70,12 +68,12 @@ export default function Project(props) {
 
       <div className=" md:grid grid-cols-2">
         <div>
-          <p className="text-secondary font-light text-1xl p-4 md:mt-64 md:ml-8">
+          <p className="text-bmtgray font-light text-1xl p-4 md:mt-64 md:ml-8">
             {project.idea}
           </p>
         </div>
         <div className="w-full ">
-          <img src={project.ideaImage.asset.url} className="md:-mt-72" />
+          <img src={project.ideaImage.asset.url} className="md:-mt-4" />
         </div>
       </div>
 
@@ -83,12 +81,12 @@ export default function Project(props) {
         <div className="w-full">
           <img
             src={project.processImage.asset.url}
-            className=" md:w-9/12 md:w-full md:-mt-60 "
+            className=" md:w-9/12 md:w-full md:mt-8 "
           />
         </div>
 
         <div>
-          <p className="text-secondary font-light text-1xl p-4 md:mt-28 md:mr-8">
+          <p className="text-bmtgray font-light text-1xl p-4 md:mt-80 md:mr-8">
             {project.process}
           </p>
         </div>

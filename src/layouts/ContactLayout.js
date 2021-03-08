@@ -12,7 +12,6 @@ import Header from "../components/header"
 import { Footer } from "../components/Footer"
 import "../styles/Contact.css"
 
-
 export default function ContactLayout(props) {
   const { siteTitle } = props
 
@@ -21,21 +20,19 @@ export default function ContactLayout(props) {
       <Nav />
 
       <div className="ml-8">
-          <h1 className="text-primary text-6xl mr-4">
-            contact
-          </h1>
-          <p className="text-secondary text-sm mr-4">
-            To associate the characteristics of BMT as an agency, the rhetorical
-            image of horses.
-          </p>
-        </div>
+        <h1 className="text-bmt text-6xl mr-4">contact</h1>
+        <p className="text-bmtgray text-sm mr-4">
+          To associate the characteristics of BMT as an agency, the rhetorical
+          image of horses.
+        </p>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ml-4 container mb-60">
-        <div className="wrapper">
-          <div className="my-2 mx-4 md:mx-2 border-b-2 ">
-            <label className="self-center "></label>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ml-4 container mb-60 md:mt-16">
+        <div className="wrapper mr-8 mt-8">
+          <div className="my-2 mx-4 md:mx-2 border-b-2 border-bmt">
+            <label className="self-center  "></label>
             <input
-              className="w-full py-3 pl-5 md:pl-20 border-0 focus:outline-none"
+              className=" placeholder-bmt w-full py-3 pl-5 md:pl-20 border-0  focus:outline-none "
               type="text"
               autocomplete="on"
               required
@@ -43,20 +40,20 @@ export default function ContactLayout(props) {
             />
           </div>
 
-          <div className="flex my-8 mx-4 md:mx-2 border-b-2">
+          <div className="flex my-8 mx-4 md:mx-2 border-b-2  border-bmt">
             <label className="self-center"></label>
             <input
-              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none"
+              className=" placeholder-bmt w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none"
               type="phone"
               placeholder="Phone"
               required
             />
           </div>
 
-          <div className="flex my-8 mx-4 md:mx-2 border-b-2">
+          <div className="flex my-8 mx-4 md:mx-2 border-b-2  border-bmt">
             <label className="self-center"></label>
             <input
-              className="w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none"
+              className=" placeholder-bmt w-full py-3 pl-2 md:pl-8 border-0 focus:outline-none"
               type="email"
               placeholder="Email"
               required
@@ -65,15 +62,15 @@ export default function ContactLayout(props) {
         </div>
 
         <div>
-          <div className="ml-8 ">
-            <p className="text-primary mt-4 mb-8">
+          <div className=" ">
+            <p className=" text-bmt mt-4 mb-8 mr-4">
               {" "}
               what type of project are you looking for? (check all that aplply)
             </p>
 
             <div className="grid  md:grid-cols-2">
               <label className="flex justify-start items-start  mb-4">
-                <div className="bg-white border-2 rounded border-purple w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                <div className="bg-white border-2 rounded border-bmt w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
                   <input type="checkbox" className="opacity-0 absolute" />
                   <svg
                     className="fill-current hidden w-4 h-4 text-green-500 pointer-events-none"
@@ -84,15 +81,15 @@ export default function ContactLayout(props) {
                 </div>
                 <div className="select-none">
                   {" "}
-                  <span className="ml-2 text-primary font-bold">
+                  <span className="ml-2 text-bmt font-bold">
                     marketing{" "}
-                    <span className="text-primary font-light">consulting</span>
+                    <span className="text-bmtgray font-light">consulting</span>
                   </span>
                 </div>
               </label>
 
               <label className="flex justify-start items-start  mb-4">
-                <div className="bg-white border-2 rounded border-purple  w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                <div className="bg-white border-2 rounded border-bmt  w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
                   <input type="checkbox" className="opacity-0 absolute" />
                   <svg
                     className="fill-current hidden w-4 h-4 text-green-500 pointer-events-none"
@@ -103,9 +100,9 @@ export default function ContactLayout(props) {
                 </div>
                 <div className="select-none">
                   {" "}
-                  <span className="ml-2 text-primary font-bold">
+                  <span className="ml-2 text-bmt font-bold">
                     digital{" "}
-                    <span className="text-primary font-light">marketing </span>
+                    <span className="text-bmtgray font-light">marketing </span>
                   </span>
                 </div>
               </label>
@@ -122,8 +119,9 @@ export default function ContactLayout(props) {
                 </div>
                 <div className="select-none">
                   {" "}
-                  <span className="ml-2 text-primary font-bold">
-                    neuromarketing
+                  <span className="ml-2 text-bmt font-bold">
+                    neuro
+                    <span className="text-bmtgray font-light">marketing </span>
                   </span>
                 </div>
               </label>
@@ -139,13 +137,16 @@ export default function ContactLayout(props) {
                   </svg>
                 </div>
                 <div className="select-none">
-                  <span className="ml-2 text-primary font-bold">BTL</span>
+                  <span className="ml-2 text-bmt text-bmt font-bold">BTL</span>
                 </div>
               </label>
 
               <label className="flex justify-start items-start  mb-4">
-                <div className="bg-white border-2 rounded border-purple w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="checkbox" className="opacity-0 absolute" />
+                <div className="bg-white border-2 rounded border-bmt w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                  <input
+                    type="checkbox"
+                    className="opacity-0 absolute text-bmt"
+                  />
                   <svg
                     className="fill-current hidden w-4 h-4 text-green-500 pointer-events-none"
                     viewBox="0 0 20 20"
@@ -154,10 +155,25 @@ export default function ContactLayout(props) {
                   </svg>
                 </div>
                 <div className="select-none">
-                  <span className="ml-2 text-primary font-bold">
+                  <span className="ml-2 text-bmt font-bold">
                     graphic{" "}
-                    <span className="text-primary font-light">design</span>
+                    <span className="text-bmtgray font-light">design</span>
                   </span>
+                </div>
+              </label>
+
+              <label className="flex justify-start items-start  mb-4">
+                <div className="bg-white border-2 rounded border-bmt w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
+                  <input type="checkbox" className="opacity-0 absolute" />
+                  <svg
+                    className="fill-current hidden w-4 h-4 text-green-500 pointer-events-none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                  </svg>
+                </div>
+                <div className="select-none">
+                  <span className="ml-2 text-bmt font-bold">multimedia</span>
                 </div>
               </label>
 
@@ -172,24 +188,7 @@ export default function ContactLayout(props) {
                   </svg>
                 </div>
                 <div className="select-none">
-                  <span className="ml-2 text-primary font-bold">
-                    multimedia
-                  </span>
-                </div>
-              </label>
-
-              <label className="flex justify-start items-start  mb-4">
-                <div className="bg-white border-2 rounded border-purple w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                  <input type="checkbox" className="opacity-0 absolute" />
-                  <svg
-                    className="fill-current hidden w-4 h-4 text-green-500 pointer-events-none"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                  </svg>
-                </div>
-                <div className="select-none">
-                  <span className="ml-2 text-primary font-bold">website</span>
+                  <span className="ml-2 text-bmt font-bold">website</span>
                 </div>
               </label>
             </div>
@@ -202,7 +201,7 @@ export default function ContactLayout(props) {
               <div className="flex flex-wrap ">
                 <div className="px-3 mb-2 mt-2">
                   <textarea
-                    className="bg-gray-100 text-center text-primary rounded border border-purple leading-normal resize-none w-72 h-64 py-2 px-3 font-medium placeholder-text-purple focus:outline-none focus:bg-white"
+                    className="placeholder-bmt bg-gray-100 text-center placeholder-bmt-input rounded border border-purple leading-normal resize-none w-72 h-64 py-2 px-3 font-medium  focus:outline-none focus:bg-white"
                     name="body"
                     placeholder="Tell us about your project"
                     required
@@ -211,8 +210,8 @@ export default function ContactLayout(props) {
               </div>
             </form>
             <div className="w-full">
-              <button className="bg-purple border-2 rounded py-2 px-3 text-white ml-8 text-2xl w-72">
-                request quote
+              <button className="bg-bmt-dark border-2 rounded py-2 px-3 text-white ml-8 text-1xl w-72">
+                request quote →
               </button>
             </div>
           </div>

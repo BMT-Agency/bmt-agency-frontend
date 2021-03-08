@@ -74,7 +74,7 @@ export function Footer() {
             <div className="flex w-60 my-8 mx-4 md:mx-2 border-b-2 border-white hover:border-white">
               <div className="">
                 <input
-                  className="w-full mt-8 md:pl-8 border-0 focus:outline-none text-white bg-transparent"
+                  className="w-full mt-8 md:pl-8 border-0 focus:outline-none text-white bg-bmt"
                   placeholder="enter your email"
                   type="email"
                   required

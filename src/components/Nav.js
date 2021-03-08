@@ -15,37 +15,37 @@ export default function Nav() {
             <a
               href="https://www.facebook.com/bmtagency"
               target="_blank"
-              className="md:inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 "
+              className="md:inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 "
             >
               FB
             </a>
             <a
               href="https://www.instagram.com/bmtagency/"
               target="_blank"
-              className="inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 sm:flex "
+              className="inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 sm:flex "
             >
               IG
             </a>
             <a
               href="https://www.youtube.com/channel/UCrYRjxHcsq8PR9yLADh6fIA/featured"
               target="_blank"
-              className=" inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6"
+              className=" inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6"
             >
               YT
             </a>
 
             {/* <a
               href="#"
-              className=" ml-16  inline-block py-1 md:py-4 text-primary font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
+              className=" ml-16  inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
             >
               EN
             </a> */}
           </div>
         </div>
       </nav>
-      <div className="flex flex-row-reverse space-x-4 space-x-reverse">
-        {/* <DropDowMenu /> */}
-      </div>
+      {/* <div className="flex flex-row-reverse space-x-4 space-x-reverse">
+        <DropDowMenu />
+      </div> */}
     </div>
   )
 }

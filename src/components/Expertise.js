@@ -12,10 +12,10 @@ export default function Expertise() {
     <>
       <div>
         <div>
-          <h1 className="text-primary text-6xl mt-32 ml-4 mb-4 md:text-6xl ">
+          <h1 className="text-bmt text-6xl mt-32 ml-4 mb-4 md:text-6xl ">
             expertise
           </h1>
-          <p className="text-secondary text-sm mb-8 ml-4 mr-16 md:hidden">
+          <p className="text-bmtgray text-sm mb-8 ml-4 mr-16 md:hidden">
             To associate the characteristics of BMT as an agency, the rhetorical
             image of horses.
           </p>
@@ -24,8 +24,8 @@ export default function Expertise() {
         <div className="ml-4 md:grid grid-cols-3">
           <div></div>
           <div className="md:flex md:flex-col">
-            <span className="text-primary mr-16 ">
-              Marketing <span className="text-secondary">Consulting</span>{" "}
+            <span className="text-bmt mr-16 ">
+              Marketing <span className="text-bmtgray">Consulting</span>{" "}
             </span>
             <img
               src={marketing}
@@ -35,8 +35,8 @@ export default function Expertise() {
           </div>
 
           <div className="sm:flex hidden md:flex md:flex-col ">
-            <span className="text-primary  mr-16  ">
-              Digital <span className="text-secondary">Marketing</span>{" "}
+            <span className="text-bmt  mr-16  ">
+              Digital <span className="text-bmtgray">Marketing</span>{" "}
             </span>
             <img
               src={digital}
@@ -47,7 +47,7 @@ export default function Expertise() {
           <div></div>
 
           <div className="md:flex-col">
-            <span className="text-primary  mr-16">BTL </span>
+            <span className="text-bmt  mr-16">BTL </span>
             <img
               src={btl}
               alt="btl"
@@ -56,8 +56,8 @@ export default function Expertise() {
           </div>
 
           <div className="md:flex md:flex-col">
-            <span className="text-primary  mr-16 ">
-              Graphic <span className="text-secondary">Design</span>{" "}
+            <span className="text-bmt  mr-16 ">
+              Graphic <span className="text-bmtgray">Design</span>{" "}
             </span>
             <img
               src={graphic}
@@ -68,7 +68,7 @@ export default function Expertise() {
           <div></div>
 
           <div className="md:flex md:flex-col">
-            <span className="text-primary  mr-16 ">Multimedia</span>
+            <span className="text-bmt  mr-16 ">Multimedia</span>
             <img
               src={multimedia}
               alt="multimedia"
@@ -77,8 +77,8 @@ export default function Expertise() {
           </div>
 
           <div className="sm: md:flex md:flex-col">
-            <span className="text-primary  mr-16  ">
-              Web<span className="text-secondary"> & Development</span>{" "}
+            <span className="text-bmt  mr-16  ">
+              Web<span className="text-bmtgray"> & Development</span>{" "}
             </span>
             <img
               src={web}

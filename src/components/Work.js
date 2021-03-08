@@ -8,10 +8,8 @@ export default function Work() {
     <>
       <div>
         <div>
-          <p className="text-primary text-6xl mt-32 ml-4 mb-4 md:text- ">
-            work
-          </p>
-          <p className="text-secondary text-sm mb-8 ml-4 mr-16 md:hidden">
+          <p className="text-bmt text-6xl mt-32 ml-4 mb-4 md:text- ">work</p>
+          <p className="text-bmtgray text-sm mb-8 ml-4 mr-16 md:hidden">
             To associate the characteristics of BMT as an agency, the rhetorical
             image of horses.
           </p>

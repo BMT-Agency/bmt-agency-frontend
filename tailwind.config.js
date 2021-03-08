@@ -2,11 +2,19 @@ module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    textColor: theme => theme("colors"),
-    textColor: {
-      primary: "#7E1B55",
-      secondary: "#878787",
-      white: "#FFFF",
+    colors: {
+      bmt: {
+        DEFAULT: "#7E1B55",
+        dark: "#70164B",
+        light: "#A73377",
+      },
+      bmtgray: {
+        DEFAULT: "#878787",
+      },
+      white: {
+        DEFAULT: "#FFFF",
+        transparent: "#ff000020",
+      },
     },
 
     fontFamily: {
@@ -18,11 +26,7 @@ module.exports = {
     //     horse: "url('/src/images/video/Caballo 2.mp4')",
     //   }),
     variants: {
-      extend: {
-        backgroundImage: theme => ({
-          "horse-bg": "url('./src/images/Caballo 1.png)",
-        }),
-      },
+      extend: {},
     },
     plugins: [],
   },
