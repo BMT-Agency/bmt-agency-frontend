@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         <div className=" ">
-          <Link to="/" className="text-bmt ml-4 md:flex justify-end">
+          <Link to="/contact" className="text-bmt ml-4 md:flex justify-end">
             Let's work together →
           </Link>
         </div>

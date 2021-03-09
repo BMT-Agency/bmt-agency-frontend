@@ -32,12 +32,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="md:mx-60">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Expertise />
-      <Work />
-      <Banner />
-      <OurClients />
+      <div className="md:ml-24 mr-4">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Expertise />
+        <Work />
+        <Banner />
+        <OurClients />
       </div>
       <FooterOne />
       <Footer />

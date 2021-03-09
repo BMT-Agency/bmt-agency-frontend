@@ -24,10 +24,8 @@ nav ul {
 
 nav ul li {
   margin: 0;
-  padding: 30px;
-
   cursor: pointer;
-  font-size: 50px;
+  font-size: 85px;
 }
 
 nav ul li :hover {
@@ -48,11 +46,13 @@ nav.isActive {
 
 @media screen and (min-width: 768px) {
   .navBar {
-    width: 0vw;
+    width: -50vw;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: -50vw;
+    left: -80vw;
+    background-color: #70164b;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,9 +76,13 @@ nav.isActive {
     cursor: pointer;
     font-size: 100px;
   }
+  nav ul li :hover {
+    background-color: white;
+    color: #70164b;
+  }
 
   nav.isActive {
-    left: -256px;
+    left: -112px;
     width: 100vw;
   }
 }

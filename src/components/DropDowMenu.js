@@ -6,6 +6,7 @@ import Close from "./icons/Close"
 import Fb from "../components/icons/Fb"
 import Instagram from "../components/icons/Instagram"
 import YT from "../components/icons/YT"
+import logo from "../images/bmt-logo-white.svg"
 import { Link } from "gatsby"
 
 export default function DropDowMenu() {
@@ -49,7 +50,8 @@ export default function DropDowMenu() {
 
         <nav ref={dropdownRef} className={`navBar ${isActive && "isActive"}`}>
           <div className="text-center md:ml-96">
-            <ul className="">
+            <img src={logo} className="md:hidden" />
+            <ul className="mt-48 md:mt-0">
               <li>
                 <Link to="/">home</Link>
               </li>
@@ -61,7 +63,7 @@ export default function DropDowMenu() {
               </li>
             </ul>
 
-            <div className="flex mt-16 ml-40">
+            <div className="flex mt-16 ml-12 md:ml-40">
               <a href="https://www.facebook.com/bmtagency" target="_blank">
                 <Fb className="mr-4" />
               </a>
@@ -78,7 +80,7 @@ export default function DropDowMenu() {
           </div>
 
           <div>
-            <button className="focus:outline-none " onClick={handleClose}>
+            <button className="focus:outline-none  " onClick={handleClose}>
               <Close />
             </button>
           </div>
