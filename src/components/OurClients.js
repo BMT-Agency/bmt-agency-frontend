@@ -25,9 +25,7 @@ export default function OurClients() {
   return (
     <>
       <div className="">
-        <p className="text-bmt text-6xl mt-32 mb-4  ">
-          our clients
-        </p>
+        <p className="text-bmt text-6xl mt-32 mb-4  ">our clients</p>
       </div>
 
       <div className="grid grid-cols-4 p-1 md:grid-cols-4 md:p-20 justify-items-center">
@@ -56,7 +54,7 @@ export default function OurClients() {
 
         <div className="">
           <div className="">
-            <img src={wacker} alt="client" className="mb-12" />
+            <img src={wacker} alt="client" className="mb-12 w-2/4" />
             <img src={tenderness} alt="client" className="mb-12" />
             <img src={viking} alt="client" className="mb-12" />
             <img src={donut} alt="client" className="mb-12" />

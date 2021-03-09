@@ -10,37 +10,35 @@ export default function Nav() {
           <img src={logo} alt="logo" />
         </div>
 
-        <div>
-          <div className=" w-8 mb-2 h-0.25  flex ">
-            <a
-              href="https://www.facebook.com/bmtagency"
-              target="_blank"
-              className="md:inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 "
-            >
-              FB
-            </a>
-            <a
-              href="https://www.instagram.com/bmtagency/"
-              target="_blank"
-              className="inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 sm:flex "
-            >
-              IG
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCrYRjxHcsq8PR9yLADh6fIA/featured"
-              target="_blank"
-              className=" inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6"
-            >
-              YT
-            </a>
+        <div className=" w-8 mb-2 h-0.25 flex justify-end content-around ">
+          <a
+            href="https://www.facebook.com/bmtagency"
+            target="_blank"
+            className="md:inline-block py-1 md:py-4 text-bmt font-light hover:text-primary  ml-4 "
+          >
+            FB
+          </a>
+          <a
+            href="https://www.instagram.com/bmtagency/"
+            target="_blank"
+            className="inline-block py-1 md:py-4 text-bmt font-light hover:text-primary sm:flex  ml-4"
+          >
+            IG
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCrYRjxHcsq8PR9yLADh6fIA/featured"
+            target="_blank"
+            className=" inline-block py-1 md:py-4 text-bmt font-light hover:text-primary ml-4 "
+          >
+            YT
+          </a>
 
-            {/* <a
+          {/* <a
               href="#"
               className=" ml-16  inline-block py-1 md:py-4 text-bmt font-light hover:text-primary mr-6 md:ml-32 md:ml-0 "
             >
               EN
             </a> */}
-          </div>
         </div>
       </nav>
       <DropDowMenu />
