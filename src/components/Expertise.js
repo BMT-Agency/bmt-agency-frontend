@@ -11,8 +11,8 @@ export default function Expertise() {
   return (
     <>
       <div>
-        <div>
-          <h1 className="text-bmt text-6xl mt-32 ml-4 mb-4 md:text-6xl ">
+        <div className="">
+          <h1 className="text-bmt text-6xl mt-32 ml-4 md:ml-16 mb-4 md:text-6xl ">
             expertise
           </h1>
           <p className="text-bmtgray text-sm mb-8 ml-4 mr-16 md:hidden">
@@ -30,7 +30,7 @@ export default function Expertise() {
             <img
               src={marketing}
               alt="marketing consulting"
-              className="w-full md:mb-12 rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
+              className="w-full md:w-4/5 md:mb-12 rounded mt-9  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125 "
             />
           </div>
 
@@ -41,7 +41,7 @@ export default function Expertise() {
             <img
               src={digital}
               alt="marketing dgital"
-              className="w-full md:mb-1 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:w-4/5 md:mb-1 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
           <div></div>
@@ -51,7 +51,7 @@ export default function Expertise() {
             <img
               src={btl}
               alt="btl"
-              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:w-4/5 md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
 
@@ -62,7 +62,7 @@ export default function Expertise() {
             <img
               src={graphic}
               alt="graphic design"
-              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:w-4/5 md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
           <div></div>
@@ -72,7 +72,7 @@ export default function Expertise() {
             <img
               src={multimedia}
               alt="multimedia"
-              className="w-full md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:w-4/5 md:mb-12 rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
 
@@ -83,7 +83,7 @@ export default function Expertise() {
             <img
               src={web}
               alt="neuromarketing"
-              className="w-full md:mb-12 block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
+              className="w-full md:w-4/5 md:mb-12 block rounded mt-9 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125"
             />
           </div>
         </div>

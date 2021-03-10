@@ -4,13 +4,13 @@ import DropDowMenu from "./DropDowMenu"
 
 export default function Nav() {
   return (
-    <div className="lg:container pl-4 sticky z-10 top-0 bg-opacity-0 w-auto">
+    <div className="container lg:container sticky z-10 top-0 bg-opacity-0 w-auto ml-4 mr-4 md:ml-16">
       <nav className="flex items-center sticky justify-between">
         <div className="flex items-center flex-no-shrink text-white mr-6  ">
           <img src={logo} alt="logo" />
         </div>
 
-        <div className=" w-8 mb-2 h-0.25 flex justify-end content-around ">
+        <div className="w-8 mb-2 h-0.25 flex justify-end content-around ">
           <a
             href="https://www.facebook.com/bmtagency"
             target="_blank"

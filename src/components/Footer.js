@@ -7,11 +7,8 @@ import "../styles/DropDownMenu.css"
 export function FooterOne() {
   return (
     <>
-      <header>
-        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
-      </header>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="bg-purple text-center ">
+        <div className="bg-bmt text-center ">
           <div className="flex justify-center m-16 ">
             <Link to="/work" className="text-white text-6xl md:mt-60 ">
               work →
@@ -19,7 +16,7 @@ export function FooterOne() {
           </div>
         </div>
 
-        <div className="bg-rouge text-center  ">
+        <div className="bg-bmt-dark text-center  ">
           <div className="flex justify-center m-16">
             <Link
               to="/contact"
@@ -37,7 +34,7 @@ export function FooterOne() {
 export function Footer() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-purple p-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-bmt p-12">
         <div className="ml-16">
           <img src={logo} alt="logo" className />
         </div>

@@ -1,25 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
-import VideoBg from "reactjs-videobg"
+import PropTypes from "prop-types"
+
 import horseResponsive from "../images/video/horseResponsive.mp4"
 import video from "../images/video/horse.mp4"
 
-import PropTypes from "prop-types"
-
-import horse from "../images/Caballo 1.png"
+import DropDowMenu from "./DropDowMenu"
 
 import Nav from "./Nav"
 
 const Header = () => {
   return (
     <>
-      <header>
-        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
-      </header>
-
       <Nav />
 
-      <div className="relative overflow-hidden -mt-44">
+      <div className="bg-responsive container relative overflow-hidden -mt-44 ">
         <div className="sm:w-full md:hidden">
           <video muted src={horseResponsive} autoPlay loop></video>
         </div>
@@ -29,9 +24,9 @@ const Header = () => {
             <video muted src={video} autoPlay loop></video>
           </div>
 
-          <div className="absolute ml-32 -m-52  md:-mt-96">
-            <div className="text-left -mt-32">
-              <span className="text-bmt text-6xl md:text-9xl">
+          <div className="absolute ml-40 -mt-96 md:ml-16 -m-52  md:-mt-96">
+            <div className="text-right md:text-left md:-mt-28">
+              <span className="text-bmt text-5xl md:text-9xl">
                 data <br />
                 <span className="text-bmtgray ">driven</span>
               </span>
@@ -41,12 +36,12 @@ const Header = () => {
               digital marketing experience
             </p>
           </div>
-        </div>
 
-        <div className=" ">
-          <Link to="/contact" className="text-bmt ml-4 md:flex justify-end">
-            Let's work together →
-          </Link>
+          <div className="-mt-24 relative ">
+            <Link to="/contact" className="text-bmt ml-4 md:flex justify-end">
+              Let's work together →
+            </Link>
+          </div>
         </div>
       </div>
     </>

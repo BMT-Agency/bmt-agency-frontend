@@ -16,6 +16,7 @@ import Work from "../components/Work"
 import Banner from "../components/Banner"
 import OurClients from "../components/OurClients"
 import { FooterOne, Footer } from "../components/Footer"
+import DropDowMenu from "../components/DropDowMenu"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,13 +33,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="md:ml-24 mr-4">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Expertise />
-        <Work />
-        <Banner />
-        <OurClients />
-      </div>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <header>
+        <link rel="stylesheet" href="https://use.typekit.net/dgg7wjb.css" />
+      </header>
+      {/* <DropDowMenu /> */}
+      <Expertise />
+      <Work />
+      <Banner />
+      <OurClients />
       <FooterOne />
       <Footer />
     </>

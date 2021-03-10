@@ -24,7 +24,7 @@ import bistro from "../images/clients/22_bistroOntheglen.svg"
 export default function OurClients() {
   return (
     <>
-      <div className="">
+      <div className="md:ml-16">
         <p className="text-bmt text-6xl mt-32 mb-4  ">our clients</p>
       </div>
 

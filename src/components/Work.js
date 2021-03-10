@@ -7,7 +7,7 @@ export default function Work() {
   return (
     <>
       <div>
-        <div>
+        <div className="md:ml-16">
           <p className="text-bmt text-6xl mt-32 mb-4 md:text- ">work</p>
           <p className="text-bmtgray text-sm mb-8 md:hidden">
             To associate the characteristics of BMT as an agency, the rhetorical
